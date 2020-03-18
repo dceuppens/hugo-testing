@@ -1,0 +1,51 @@
+ {{ if .Site.Menus.main }}
+	<nav id="nav" class="c-primary-nav promote-layer">
+		<ul class="c-primary-nav__list">
+
+	        {{ $currentPage := . }}
+    	    {{ range sort .Site.Menus.main }}
+            {{ if .HasChildren }}
+				{{ if .Name}}
+            		
+					<li class="c-primary-nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} nav--is-active {{ end }}">
+						<span class="flexnav">
+							<a class="c-primary-nav__link" href="{{ .URL | absLangURL }}">{{ .Name | upper }}</a>
+							<button class="nav-toggle-secmenu icon-down-open" aria-hidden="true" aria-pressed="false" type="button"></button>
+						</span>
+				
+                
+ 		               <ul class="c-secondary-nav__list">
+        	            {{ range sort .Children }}
+            	        	<li class="c-secondary-nav__item">
+                	    		<ul class="c-secondary-nav-bundle">
+                    				<li class="c-secondary-nav__bundleitem"><a href="{{ .URL | absLangURL }}" class="c-secondary-nav__link">{{ .Name }}</a></li>
+                    				{{ if .HasChildren }}
+                    					<li class="c-secondary-nav__bundleitem"><a href="#" class="c-secondary-nav__link">Tijdelijk</a></li>
+
+                    					{{ range sort .Children }}
+                    						<li class="c-secondary-nav__bundleitem"><a href="{{ .URL | absLangURL }}" class="c-secondary-nav__link">{{ .Name }}</a></li>
+                    					{{ end }}
+                    				{{ end }}
+
+                    			</ul>
+                    		</li>
+                    	{{ end }}
+                		</ul>
+                	</li>
+                {{ end }}
+            {{ else }}
+
+				{{ if .Name}}
+            		<li class="c-primary-nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)  }} nav--is-active {{ end }}">
+            			<span class="flexnav">
+            				<a class="c-primary-nav__link" href="{{ .URL | absLangURL }}">{{ .Name | upper }}</a>
+            			</span>
+            		</li>
+					
+					
+				{{ end }}
+			{{ end }}
+			{{ end }}
+		</ul>
+	</nav>
+{{ end }}  

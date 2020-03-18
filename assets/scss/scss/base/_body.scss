@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+
+/**
+ * Body base styles
+ */
+body {
+	background: $color-gray-15;
+	color: $color-text;
+	font: 100%/1.5 $font;
+	-webkit-text-size-adjust: 100%;
+	min-height: 100vh;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+

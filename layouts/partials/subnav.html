@@ -1,0 +1,16 @@
+<!-- Check de sections onder de huidige secties & check de directory van de huidige pagina  - de onderliggende pagina's van de sectie hebben normaal dezelfde folder als de subsectie in het menu - niet actief als niet dezelfde folder - wel uitzeondering maken voor homepage - daar een vaste lijst maken als variabele-->
+{{- if not .IsHome}}
+	<section class="c-subnav">
+    
+		<input type="checkbox" id="toggle-subnav" role="button" >
+		<label for="toggle-subnav" class="c-subnav-label">Sections</label>
+	{{ $sections := (.Site.GetPage "section" .Section).Sections }}	
+	{{ $currentDir := .Dir }}	
+	<ul class="c-sub-nav__list"> 
+	{{ range $sections }}
+			<li><a {{ if eq .Dir $currentDir }}class="active" {{ end }}href="{{ .Permalink }}">{{ .Title }}</a></li>
+	{{ end }}
+	</ul>
+	</section> 
+<!-- end subnavigation -->
+{{ end }}

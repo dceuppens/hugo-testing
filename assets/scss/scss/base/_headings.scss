@@ -1,0 +1,67 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Heading 1
+ */
+h1  {
+	font-family: $font-secondary;
+	font-size: $font-size-large;
+	line-height: 1.2;
+}
+
+/**
+ * Heading 2
+ */
+h2 {
+	font-family: $font-secondary;
+	font-size: $font-size-med-2;
+	line-height: 1.2;
+}
+
+/**
+ * Heading 3
+ */
+h3  {
+	font-family: $font-secondary;
+	font-size: $font-size-med;
+
+	line-height: 1.2;
+	//margin-bottom: 1em;
+}
+
+.content-body-section > h3 {
+	@media all and ( min-width: $bp-xl ) {
+		margin-left: -3em;
+	}
+}
+
+/**
+ * Heading 4
+ */
+h4  {
+
+}
+
+/**
+ * Heading 5
+ */
+h5 {
+
+}
+
+/**
+ * Heading 6
+ */
+h6 {
+
+}
+
+/**
+ * Subheading
+ */
+.subheading {
+	font-family: $font-secondary;
+	font-weight: normal;
+}

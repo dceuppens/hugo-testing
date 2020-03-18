@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    #FOOTER NAVIGATION
+\*------------------------------------*/
+ 
+/**
+ * Footer Nav
+ */
+.c-footer-nav {
+		display: block;
+}
+
+/**
+ * Footer Nav List
+ */
+.c-footer-nav__list {
+	display: flex;
+	//flex-direction: column;
+	flex-wrap: wrap;
+
+	@media all and (min-width: $bp-small) {
+		flex-direction: row;
+		justify-content: center;
+
+	}	
+}
+
+/**
+ * Footer Nav List Item
+ */
+.c-footer-nav__item {
+	width: 50%;	
+	
+	@media all and (min-width: $bp-small) {
+		width: inherit;
+	}
+}
+
+/**
+ * Footer Nav Links
+ */
+.c-footer-nav__link {
+	font-weight: bold;
+	display: block;
+	padding: $pad-half 0;
+	color: $color-gray-05;
+	text-align:center;
+	
+	&:hover, &:focus {
+		color: $color-white;
+	}
+	@media all and (min-width: $bp-small) {
+		padding: $pad $pad-and-half;
+
+	}
+}

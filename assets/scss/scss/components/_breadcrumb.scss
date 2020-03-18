@@ -1,0 +1,67 @@
+/**
+*
+* Breadcrumb
+*
+**/
+/* Vanaf mediumscreensize laten we de breadcrumbs zien */
+
+.c-crumbs{
+  //display: none;
+  width: 100%;
+  background-color: $color-gray-05;
+  color: $color-text-link;
+  font-size: $font-size-small;
+  display: block;
+}
+
+.c-crumbs__list {
+    
+  padding: $pad-half $pad $pad-half 0;
+  
+  li {
+    display: inline-block;
+
+    a {
+      text-decoration: underline;
+    }
+    
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    &:after {
+      content: '>';
+      padding: 0 0.25em 0 0.5em;
+      
+    }
+
+    &:nth-last-child(2):after {
+      content: ' ';
+      padding: 0 ;  
+      @media all and (min-width: $bp-med) {
+        content: '>';
+        padding: 0 0.25em 0 0.5em;
+
+      }
+    }
+
+    &.first, &.last {
+      display:none;
+
+      @media all and (min-width: $bp-med) {
+        display: inline-block;
+      }
+    }
+
+    &.last:before, &.last:after, &.first:after {
+      content: '';
+      padding: 0;
+    }
+
+    &.last p {
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+/**
+ * Links
+ */
+a {
+	color: $color-gray-65;
+	text-decoration: none;
+	outline: 0;
+	transition: all $anim-speed-quick $anim-ease;
+
+	&:hover, &:focus {
+		color: $color-gray-73;
+	}
+}
+
+a.nav-toggle {
+	color: white;
+}

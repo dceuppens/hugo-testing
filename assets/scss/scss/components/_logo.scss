@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------
+
+.c-logo {
+	display: block;
+	height: $logo-height-small;
+	
+	.c-box__header & {
+		max-width: 12em;
+		margin: 0 auto;
+	}
+	
+	@media all and (min-width: $bp-med) {
+		height: $nav-height-medium;
+		padding-left: $pad;
+
+	}
+}
+
+.c-logo-link {
+	display: inline-block;
+	margin: 0 auto;
+
+	@media all and (min-width: $bp-med) {
+		margin: 0
+		}
+
+	//padding: 0.2rem 1rem;
+}
+*/

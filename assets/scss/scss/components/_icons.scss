@@ -1,0 +1,178 @@
+/*------------------------------------*\
+    #ICONS
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2') format('woff2'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype'),
+       url('../fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?35249291#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before, {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+.icon-search:before { 
+	content: '\e800'; 
+	font-size: $font-size-med;
+	padding-bottom: 2px;
+	} /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
+.icon-down-open:before { content: '\e802'; } /* '' */
+.icon-cancel-circled:before { content: '\e803'; } /* '' */
+.icon-left-open:before { content: '\e804'; } /* '' */
+.icon-right-open:before { content: '\e805'; } /* '' */
+.icon-up-open:before { content: '\e806'; } /* '' */
+.icon-picture:before { content: '\e807'; } /* '' */
+.icon-home:before { content: '\e808'; } /* '' */
+.icon-resize-full:before { content: '\e809'; } /* '' */
+.icon-amazon:before { content: '\e80a'; } /* '' */
+.icon-download-alt:before { content: '\e80c'; } /* '' */
+.icon-ok-1:before { content: '\e80d'; } /* '' */
+.icon-cancel-1:before { content: '\e80e'; } /* '' */
+.icon-resize-small:before { content: '\e80f'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-menu:before { 
+	content: '\f0c9';
+	font-size: $font-size-med;
+ } /* '' */
+.icon-pinterest-circled:before { content: '\f0d2'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
+.icon-plus-squared:before { 
+	content: '\f0fe'; 
+	color: $color-utility-positive; 
+	} /* '' */
+.icon-minus-squared:before { 
+	content: '\f146'; 
+	color: $color-utility-negative; 
+} /* '' */
+.icon-ok-squared:before { content: '\f14a'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+
+.icon-link:before { content: '\e80b'; } /* '' */
+.icon-question-circle-o:before { content: '\f29c'; } /* '' */
+.icon-angle-double-left:before { content: '\f100'; } /* '' */
+.icon-angle-double-right:before { content: '\f101'; } /* '' */
+
+
+.icon-location:after { content: '\e810'; } /* '' */
+
+[class^="icons-"]:before, [class*=" icons-"]:before {
+  content: ' ';
+  background-size: 2em 2em;
+  height: 2em;
+  width: 2em;
+  margin-right:1em;
+  display: inline-block;
+}
+
+.icons-motherboard:before {
+	  background-image: url('../images/icons/motherboard.svg');
+}
+
+.icons-cpu:before {
+    background-image: url('../images/icons/cpu.svg');
+}
+
+
+.icons-keyboard:before {
+    background-image: url('../images/icons/keyboard.svg');
+}
+
+.icons-monitor:before {
+    background-image: url('../images/icons/monitor.svg');
+}
+
+.icons-mouse:before {
+    background-image: url('../images/icons/mouse.svg');
+}
+
+.icons-psu:before {
+    background-image: url('../images/icons/psu.svg');
+}
+
+.icons-ram:before {
+    background-image: url('../images/icons/ram.svg');
+}
+
+.icons-sound:before {
+    background-image: url('../images/icons/sound.svg');
+}
+
+.icons-vr:before {
+    background-image: url('../images/icons/vr.svg');
+}
+
+.icons-wifi:before {
+    background-image: url('../images/icons/wifi.svg');
+}
+
+.icons-winos:before {
+    background-image: url('../images/icons/win_os.svg');
+}
+
+
+.icons-cooler:before {
+    background-image: url('../images/icons/cooler.svg');
+}
+
+.icons-controller:before {
+    background-image: url('../images/icons/controller.svg');
+}
+
+.icons-hdd:before {
+    background-image: url('../images/icons/hdd.svg');
+}
+
+.icons-gpu:before {
+    background-image: url('../images/icons/gpu.svg');
+}
+

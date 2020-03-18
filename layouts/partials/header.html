@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	{{ .Hugo.Generator }}
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{ template "_internal/google_analytics_async.html" . }}
+</head>
+<body class="home">
+	<div class="l">
+		<header class="c-header">
+			<div class="c-header__controls promote-layer">
+				<a href="/" class="c-logo-link">
+				<img src="/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
+				</a><!-- end c-logo -->			
+
+				<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+				<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+				{{ partial "menu.html" . }}
+
+				<div class="c-search-form">
+					<form method="post" class="c-search-form__content">
+					<label for="search" class="c-search-form__label is-vishidden">Search the site</label>
+					<input type="search" id="search" class="c-search-form__input" placeholder="Search the site" />
+					</form>
+			    </div>
+			    <!-- end c-search-form -->
+			</div><!-- end c-header__controls -->
+		</header><!-- end c-header -->
+
+		<main class='c-main'>
+			{{ partial "subnav.html" . }}
+			{{ partial "breadcrumbs.html" . }}
+
+		</main>
+	</div>
+</body>

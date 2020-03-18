@@ -1,0 +1,528 @@
+/*------------------------------------*\
+    #BLOCKS
+\*------------------------------------*/
+/**
+ * 1) Blocks are collections of text and/or images/media working together as a unit.
+ */
+
+/*------------------------------------*\
+	#HERO BLOCK
+\*------------------------------------*/
+.c-block-hero {
+    display: block;
+    position: relative;
+}
+
+/**
+ * Hero Image
+ * 1) This is the primary hero image that runs full-bleed across the layout
+ */
+.c-block-hero__img {
+    display: block;
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+/**
+ * Hero Headline
+ * 1) This sits overtop of the hero image when space permits
+ */
+.c-block-hero__headline {
+    background: $color-dim-50;
+    color: $color-white;
+    padding: 1rem;
+    font-size: 2.6rem;
+    transition: all $anim-speed-quick $anim-ease;
+
+    @media all and (min-width: $bp-large) {
+        position: absolute;
+        top: 3rem;
+        left: 1rem;
+        width: 50%;
+        border-radius: $border-radius;
+    }
+
+    .c-block-hero:hover &, .c-block-hero:focus & {
+        background: $color-gray-73;
+    }
+ }
+
+
+
+
+
+/*------------------------------------*\
+	#PRODUCT BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) Media block contains an image (or some other media) on the left
+ * and text on the right.
+ * 2) For more info, read http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ 
+Dit anders organiseren - per size & niet per type
+-> 3 types definieren:
+    - c-block -  geen beeld - gewoon text
+    - c-block-media -> algemene config
+
+    - c-block-media--standard-small -> Beeld Links - Text rechts op mobiel - inverteerbaar
+    - c-block-media--standard-medium -> Beeld Links - Text rechts op mobiel - inverteerbaar
+    - c-block-media--headline-medium -> Beeld Links 30% - Text rechts 70% - inverteerbaar
+    - c-block-media--top-small -> Beeld boven - text onder op mobiel
+    - c-block-media--top-medium -> Beeld boven - text onder vanaf medium
+
+    Combinatie elementen:
+    - c-block-media--inverse - draait volgorde text & beeld om
+    - c-block-media--no-image
+    ? hoe stack blokken definieren (3x mediablock & 3x text block)
+    - c-list-block
+    - c-list-block--small // voorlopig geen usecase voor
+    - c-list-block--medium // voorlopig geen usecase voor
+ */
+
+
+
+.c-product-media {
+	
+    //flex: 0 1 auto;
+	//display: block; 
+    display:flex;
+    //testje
+    //flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    transition: all $anim-speed-quick $anim-ease;
+    font-size: $font-size-small-2;
+    
+	&:hover, &:focus {
+		.c-block-product__headline {
+			color: $color-gray-85;
+		}
+    }
+    /*
+    &.c-block-media--top-small{
+        display: block;
+
+    }
+
+    &.c-block-media--standard-small,  {
+        display: flex;
+    } */
+
+
+
+    @media all and (min-width: $bp-med) {
+        flex-wrap: nowrap;
+    }
+
+      
+
+}
+
+/**
+ * Media Container
+ * 1) This is the container that holds the block image (or media)
+ */
+.c-product-media__media {
+	width: 100%;
+    flex: 0 0 5em;
+    padding-top: $pad-quarter;
+    padding-left:$pad-quarter;    
+    //testje
+    //order: 2;
+    order: 1;
+
+    @media all and (min-width: $bp-med) {
+        order: 1;
+    }
+}
+
+
+.c-product-media__img {
+	border-radius: $border-radius;
+}
+
+.c-product-media__headline {
+	margin-bottom: 0.2em;
+    display: inline-block;
+    margin-left: 0.5em;
+
+    //testje
+    padding-top: 0;
+
+	transition: all $anim-speed-quick $anim-ease;
+    //padding-top: $pad-half;
+    @media all and (min-width: $bp-med) {
+        padding-top: 0
+    }
+}
+
+.c-product-media__body {
+    padding-right: $pad-half;
+    padding-left: $pad-quarter;
+
+    order: 1;
+    //testje
+    //flex: 1 0 100%;
+    flex: 0 1 auto;
+	//display: flex;
+	//flex-direction: column;
+	//justify-content: center;
+	//flex: 1;
+    align-self: center;
+
+    @media all and (min-width: $bp-med) {
+           
+            flex: 0 1 auto;
+            align-self:auto;
+   }
+}
+
+
+
+.c-product-media__excerpt {
+	transition: all $anim-speed-quick $anim-ease;
+
+    //testje
+
+    //display: none;
+    display: none;
+    margin-left: 0.5em;
+    @media all and (min-width: $bp-med) {
+       display: block;
+       margin-left: 0.5em;
+   } 
+
+}
+
+.c-product-media__price {
+    transition: all $anim-speed-quick $anim-ease;
+    flex: 1 0 auto;
+    align-self:center;
+    text-align: right;
+    margin-right: $pad-half;
+
+    order: 3;
+    //testje
+    display:block;
+
+    @media all and (min-width: $bp-large) {
+       display: block;
+   } 
+
+}
+
+.c-product-media__pricevalue {
+    margin: auto 0;
+    font-size: $font-size-med-2;
+    color: $color-brand-secondary;
+    font-family: $font-secondary;
+}
+.c-product-media__button {
+    padding-right: $pad-half;
+    padding-left: $pad-quarter;
+    margin: auto;
+    order: 4;
+    flex: 0 0 5em;
+}
+
+
+/*------------------------------------*\
+    # MEDIA BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) Media block contains an image (or some other media) on the left
+ * and text on the right.
+ * 2) For more info, read http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+ 
+Dit anders organiseren - per size & niet per type
+-> 3 types definieren:
+    - c-block -  geen beeld - gewoon text
+    - c-block-media -> algemene config
+
+    - c-block-media--standard-small -> Beeld Links - Text rechts op mobiel - inverteerbaar
+    - c-block-media--standard-medium -> Beeld Links - Text rechts op mobiel - inverteerbaar
+    - c-block-media--headline-medium -> Beeld Links 30% - Text rechts 70% - inverteerbaar
+    - c-block-media--top-small -> Beeld boven - text onder op mobiel
+    - c-block-media--top-medium -> Beeld boven - text onder vanaf medium
+
+    Combinatie elementen:
+    - c-block-media--inverse - draait volgorde text & beeld om
+    - c-block-media--no-image
+    ? hoe stack blokken definieren (3x mediablock & 3x text block)
+    - c-list-block
+    - c-list-block--small // voorlopig geen usecase voor
+    - c-list-block--medium // voorlopig geen usecase voor
+ */
+
+.c-block-media {
+    
+    flex: 0 1 auto;
+    
+    transition: all $anim-speed-quick $anim-ease;
+    font-size: $font-size-small-2;
+    
+    &:hover, &:focus {
+        .c-block-media__headline {
+            color: $color-gray-85;
+        }
+    }
+    
+    &.c-block-media--top-small{
+        display: block;
+
+    }
+
+    &.c-block-media--standard-small,  {
+        display: flex;
+    }
+
+
+
+    @media all and (min-width: $bp-med) {
+        &.c-block-media--standard-medium, &.c-block-media--headline-medium{
+        display: flex;
+        }
+        //    display: flex; //nieuw
+        
+        &.c-block-media--top-medium {
+            display: block;
+        }       
+    }
+}
+
+/**
+ * Media Container
+ * 1) This is the container that holds the block image (or media)
+ */
+.c-block-media__media {
+    width: 100%;
+
+
+    .c-block-media--standard-small > & {
+        flex: 0 0 8.75em;
+        padding-top: $pad-quarter;
+    }
+    .c-block-media--top-small > & {
+        display: block;
+    }
+    /*.media--reverse > & {
+            order: 2;
+            /*margin: 0 0 0 1em;*/ 
+        /*} */
+    
+    @media all and (min-width: $bp-med) {
+        .c-block-media--standard-medium > & {
+            flex: 0 0 8.75em;
+            padding-top: $pad-quarter;
+        }
+        .c-block-media--top-medium > &{
+            display: block;
+        }
+
+        .c-block-media--headline-medium > & {
+            flex: 1 0 70%;
+        }
+
+        .media--reverse > & {
+            order: 2;
+            /*margin: 0 0 0 1em;*/
+        }       
+       
+    }
+
+    .c-block-media--no-image > & {
+        display: none;}
+
+
+}
+
+
+
+.c-block-media__img {
+    border-radius: $border-radius;
+}
+
+.c-block-media__headline {
+    margin-bottom: 0.2em;
+    //color: $color-gray-50;
+    transition: all $anim-speed-quick $anim-ease;
+    padding-top: $pad-half;
+    @media all and (min-width: $bp-med) {
+        padding-top: 0
+    }
+}
+
+.c-block-media__body {
+    padding-right: $pad-half;
+    padding-left: $pad-quarter;
+
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //flex: 1;
+
+    .c-block-media--standard-small > & {
+        flex: 0 1 auto;
+    }
+    .c-block-media--top-small > & {
+        display: block;
+        width: 100%;
+    }
+     
+
+    @media all and (min-width: $bp-med) {
+           
+        .c-block-media--standard-medium > & {
+            flex: 0 1 auto;
+        }
+        .c-block-media--top-medium > & {
+            display: block;
+        }
+
+        .c-block-media--headline-medium & > {
+            flex: 1 0 30%;
+        }
+       //flex: 1;
+   }
+}
+
+
+
+.c-block-media__excerpt {
+    transition: all $anim-speed-quick $anim-ease;
+
+
+    display: none;
+
+    @media all and (min-width: $bp-large) {
+       display: block;
+   } 
+
+}
+
+.c-block-media__button {
+    padding-right: $pad-half;
+    padding-left: $pad-quarter;
+    margin: auto;
+
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+	#TOUT BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) The tout block contains an image and headline overlayed over the image.
+ */
+.c-block-tout {
+    display: inline-block;
+	margin-bottom: $space-half;
+	position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+}
+ 
+/**
+ *  Tout image
+ */
+ 
+ .c-block-tout__img {
+	 display: block;
+ }
+
+/**
+ *  Tout headline
+ */
+.c-block-tout__headline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $color-dim-50;
+    color: $color-white;
+    padding: $pad-half;
+    font-size: 1.4rem;
+    transition: all $anim-speed-quick $anim-ease;
+
+    .c-block-tout:hover &, .c-block-tout:focus & {
+        padding-bottom: 2rem;
+    }
+}
+
+
+
+/*------------------------------------*\
+	#TILE BLOCK
+\*------------------------------------*/
+
+/**
+ * 1) The tile block contains a span and headline overlayed on a background
+ */
+.c-block-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: $color-dim-50;
+    color: $color-white;
+    border-radius: $border-radius;
+    padding: 1em 1em;
+    text-align: center;
+    overflow: hidden;
+    transition: all $anim-speed-quick $anim-ease;
+
+    &:hover, &:focus {
+        background: $color-dim-70;
+        color: $color-white;
+    }
+
+    @media all and (min-width: 55rem) {
+	    padding: 4em 1em;
+    }
+}
+
+/**
+ * Featured tile block
+ */
+.c-block-tile--featured {
+	min-height: 200px;
+}
+
+/**
+ * Tile block value
+ */
+.c-block-tile__value {
+	font-size: 1.5rem;
+    line-height: 1.2;
+
+	/**
+	 * Tile value when inside featured tile parent selector
+	 */
+	.c-block-tile--featured & {
+	    font-size: 2.5rem;
+
+	    @media all and (min-width: $bp-med) {
+	    	font-size: 5rem;
+		}
+    }
+
+    @media all and (min-width: 55rem) {
+		font-size: 3rem;
+    }
+}
+
+.c-block-tile__label {
+    color: $color-gray-15;
+    font-weight: normal;
+    font-size: $font-size-med;
+}

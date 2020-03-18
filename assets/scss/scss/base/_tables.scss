@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #TABLE
+\*------------------------------------*/
+
+/**
+ * Table base styles
+ */
+table {
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	//border: 1px solid $color-gray-50;
+	border: none;
+	width: 90%;
+	margin-left: $pad;
+	margin-bottom: $pad;
+}
+
+/**
+ * Table header base styles
+ */
+th {
+	text-align: left;
+	border: none;
+	//border: 1px solid $color-gray-50;
+	padding: 0.2em;
+}
+
+/**
+ * Table cell base styles
+ */
+td {
+	border: none;
+	//border: 1px solid $color-gray-50;
+	padding: 0.2em;
+}

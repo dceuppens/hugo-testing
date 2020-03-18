@@ -1,0 +1,32 @@
+{{ $imagefile := (printf "%s*md" (.Get 0)) }}
+{{ $imagename := (printf "%s*" (.Get 0)) }}
+<p> Imagefile: {{ $imagefile}}</p>
+<p> Imagenaam: {{ $imagename}}</p>
+{{ $command := .Get 1 }}
+{{ $options := .Get 2 }}
+
+{{ $headless := .Site.GetPage "page" "bolleke" }}
+
+{{ if eq (printf "%T" $imagename) "string" }}
+	{{ $imagename }} is een string 
+{{ end }}
+
+{{ if eq (printf "%T" $imagefile) "string" }}
+	{{ $imagefile }} is een string 
+{{ end }}
+imagePhotographerName
+{{ $reusablePages := $headless.Resources.Match ($imagefile) }}
+
+<p> reusable Images {{ $reusablePages}}</p>
+{{ range $reusablePages }}
+	<p>{{ .Title }}</p>
+	<p>{{ .Params.Imagename }}</p>
+	<p>{{ .Params.Imagesrc }}</p>
+	<img src="{{ .Params.Imagesrc }}?test" alt="{{ .Params.Imagename }}" >
+	<figcaption >
+<a href="{{ .Params.imagePhotographerURL}}" rel="{{ .Params.ImageFollow }}" target="_blank">Original image</a> by user 
+{{ .Params.imagePhotographerName}} on {{ .Params.imageSource }}<a href="{ .Params.imageCopyrightURL"}} rel="nofollow" target="_blank">CC BY-NC-ND 2.0</a>.
+</figcaption>
+	
+
+{{ end }}

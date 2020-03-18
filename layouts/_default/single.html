@@ -1,0 +1,53 @@
+{{ define "maincontent" }}
+
+<div class="ct-section">
+	<div class="ct-row">
+		<article class = "content-primary">
+			<div class ="content-section-label">
+				<a href="{{ .Parent.URL }}" class="content-section-label--link">{{ .Parent.Name }}</a>
+      		</div>
+			<header class = "content-header">
+
+				<h1 class = "content-title">{{ .Title }}</h1>
+				<p class = "content-intro>">{{ .Description }}</p>
+			</header>
+
+			<div class="content-section-meta">
+				<p>Placeholder</p>
+			</div>
+			{{ .Content }}
+		</article>
+		<div class = "content-secondary">
+      		<div id = "toc">
+      			{{ .TableOfContents }}
+      		</div>
+      		<div class ="advertising">
+        		<img class="" src="http://placehold.it/250x600 " alt="">
+      		</div>
+    	</div>
+  		
+
+	</div>
+
+</div>
+
+
+ 
+
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

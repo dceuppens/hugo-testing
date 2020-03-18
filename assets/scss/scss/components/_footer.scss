@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+
+/**
+ * Footer
+ */
+.c-footer {
+	clear: both;
+	overflow: hidden;
+	background: $color-black;
+	color: $color-white;
+	line-height: 1.2;
+	padding: 1em 0;
+}
+
+/**
+ * Footer nav
+ */
+.c-footer__info, .copyright {
+	max-width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding: $pad-half 0;
+	font-size: $font-size-small;
+	
+	a {
+		color: $color-gray-05;
+		text-decoration: underline;
+		
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+.copyright {
+	font-size: $font-size-small-2;
+}

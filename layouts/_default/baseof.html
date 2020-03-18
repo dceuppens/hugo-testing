@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	{{ .Hugo.Generator }}
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700&amp;font-display=swap" rel="stylesheet">
+	{{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
+	{{ $style := resources.Get "../assets/scss/style.scss" | resources.ToCSS $options }}
+	
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	{{ template "_internal/google_analytics_async.html" . }}
+	{{ partial "breadcrumb_json.html" . }}
+</head>
+<body class="home">
+	<div class="l">
+		{{ partial "navbar.html" . }}
+
+		<main class='c-main'>
+			{{ partial "subnav.html" . }}
+			{{ partial "breadcrumbs.html" . }}
+			{{ block "maincontent" . }}
+
+			{{ end }}
+
+		</main>
+	</div>
+	    <!-- build:js scripts/main.min.js -->
+
+    <!-- endbuild -->
+    
+    {{ $jsmenu := resources.Get "../assets/js/menu.js" }}
+    {{ $jshighlight := resources.Get "../assets/js/highlight.js" }}
+    {{ $defaultjs := slice $jsmenu $jshighlight | resources.Concat "js/main.js" }}
+    {{ $globalJS := $defaultjs | resources.Minify | resources.Fingerprint }}
+
+    
+	<script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}"></script>
+	
+</body>

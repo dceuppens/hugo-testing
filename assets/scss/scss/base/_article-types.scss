@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #Article types
+\*------------------------------------*/
+
+/**
+ * Normal
+ */
+
+.type-normal--item {
+	transition: background-color $anim-speed-quick $anim-ease;
+	background-color: $color-gray-05;
+}
+
+.type-normal--item:hover { 
+	background-color: $color-gray-15;
+}

@@ -1,0 +1,175 @@
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+
+/**
+ * Header
+ */
+.c-header {
+	
+	
+	
+	padding-bottom: $pad 0;
+	position:relative;
+
+	z-index: 10;
+	background-color: black;
+}	
+	
+/**	
+	@media all and (min-width: $bp-med) {
+		padding: 0.5em 0;
+	}
+	@media all and (min-width: $bp-large) {
+		display: flex;
+		align-items: center;
+	}
+}
+*/
+
+/**
+ * Header Controls
+ * 1) This container holds the primary nav and search menu
+ */
+.c-header__controls {
+	margin-right: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;	
+	width: 100%;
+	z-index: 10;
+	height: $nav-height-small;
+	
+	
+
+	background-color: black;
+	
+	@include transition(transform,0.3s,ease-out)
+	 -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+
+	@media all and (min-width: $bp-med) {
+		
+		left: inherit;
+		margin-right: auto;
+		width: $bp-med - 2* $pad;
+		// padding-left: 1rem;
+		//margin-top: 1.5rem;
+
+
+	}
+
+	@media all and (min-width: $bp-large) {
+		width: 100%;
+		position: initial;
+		//top: inherit;
+		//left: inherit;
+		margin: auto;
+		// padding-left: 1rem;
+		//margin-top: 1.5rem;
+	}
+	
+}
+
+ .c-header__controls.nav--is-active, 
+ main.nav--is-active {
+ 	 -webkit-transform: translate(250px, 0);
+    transform: translate(250px, 0);
+}
+/**
+ * Nav toggle button
+ * 1) Styles for the general nav toggle button
+ */
+.nav-toggle {
+	display: block;
+	padding: 0.9rem 1rem 0.7rem;
+	font-size: 1.3rem;
+	line-height: 1;
+	//width: 2rem;
+    //height: 2rem;
+    //background-image: none;
+    //background-color: transparent;
+    //border: none;
+    //padding: 0;
+    //display: inline-block;
+    //-webkit-transition: background-color .2s ease-out;
+    //transition: background-color .2s ease-out;
+    //-webkit-tap-highlight-color: transparent;
+	
+
+	/*@media all and (max-width: 17em) {
+		padding-left: 0.2rem;
+		padding-right: 0.2rem;
+	} */
+}
+
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.c-logo {
+	display: block;
+	height: $logo-height-small;
+	
+	.c-box__header & {
+		max-width: 12em;
+		margin: 0 auto;
+	}
+	
+	@media all and (min-width: $bp-med) {
+		height: $logo-height-small;
+		padding-left: $pad;
+
+	}
+
+	@media all and (min-width: $bp-large) {
+		height: $nav-height-medium;
+		padding-left: $pad;
+
+	}
+}
+/*
+.c-logo-link {
+	display: inline-block;
+	margin: 0 auto;
+
+	@media all and (min-width: $bp-med) {
+		margin: 0
+		}
+
+	//padding: 0.2rem 1rem;
+}
+
+*/
+.c-logo-link {
+	order: 2;
+	margin: 0 auto;
+	@media all and (min-width: $bp-med) {
+		order: 1;
+		width:fit-content;
+		margin: 0 ;
+	}
+}
+
+.nav-toggle-menu {
+	order: 1;
+	@media all and (min-width: $bp-med) {
+		display: none;
+	}	
+}
+
+.nav-toggle-search {
+	order: 3;
+
+		@media all and (min-width: $bp-med) {
+		//height:15px;
+		
+	}
+
+	@media all and (min-width: $bp-xl) {
+		display: none;
+	}
+	
+}

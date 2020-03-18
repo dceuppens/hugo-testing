@@ -1,0 +1,30 @@
+
+{{ $imagefile := (printf "%s*md" (.Get 0)) }}
+{{ $imagecaption :=  .Get 1 }}
+{{ $headless := .Site.GetPage "page" "bolleke" }}
+{{ $reusablePages := $headless.Resources.Match ($imagefile) }}
+
+{{ range $reusablePages }}
+
+
+<div class="content-body-aside">
+	<div class="content-media-aside">
+        <img 
+  		  srcset="	{{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=960&dpr=1&q=70&format=auto&ch=Width,DPR 960w,
+  		  			{{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=675&dpr=1&q=70&format=auto&ch=Width,DPR 675w,
+          		  	{{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=640&dpr=1&q=70&format=auto&ch=Width,DPR 640w,
+		 	        {{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=480&dpr=1&q=70&format=auto&ch=Width,DPR 480w,
+		 	        {{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=240&dpr=1&q=70&format=auto&ch=Width,DPR 240w"
+                    
+  		  sizes=	"(min-width: 1140px) 240px, (min-width: 740px) 675px, (min-width: 320px) 100vw"
+  		  src="{{ .Site.Params.image_root }}{{ .Params.Imagesrc }}?w=675&h=506"
+          alt="{{ .Params.Imagename }}" class="content-media__img">
+  	      <figcaption class="content-media__caption">{{ $imagecaption }} <a href="{{ .Params.imagePhotographerURL}}" rel="{{ .Params.ImageFollow }}" target="_blank">{{ i18n "original_image"}}</a>{{ i18n "by_user"}} {{ .Params.imagePhotographerName}} - {{ .Params.imageSource }}<a href="{{.Params.imageCopyrightURL}}" rel="nofollow" target="_blank"> {{ .Params.imageCopyright}}</a></figcaption>
+
+
+	</div>
+</div>
+
+
+
+{{ end }}
