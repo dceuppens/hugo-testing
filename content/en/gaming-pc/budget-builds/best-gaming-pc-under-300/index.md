@@ -1,10 +1,16 @@
 +++
 categories = ["Gaming PC", "Budget Builds","Problems"]
 date = "2012-04-06"
+Lastmod = "2020-03-17"
 description = "Check out our best budget gaming PC for under $300 of 2020 featuring an AMD APU, 16GB DDR4 RAM and an SSD built and tested by our team of PC experts."
 
 tags = [".vimrc", "plugins", "spf13-vim", "vim"]
-title = "Best Cheap Gaming PC Build Under $300 in 2020 | 2PWNGear"
+title = "Best Cheap Gaming PC Build Under $300 in 2020"
+
+Author = "Dirk Ceuppens"
+Mainimage = "best-gaming-pc-build-under-300"
+Altmainimage ="Dit is een alt"
+Captionmainimage = "Dit is een caption"
 
 [menu]
 [menu.main]
@@ -13,7 +19,6 @@ title = "Best Cheap Gaming PC Build Under $300 in 2020 | 2PWNGear"
 		weight = 10
 
 +++
-# Our Best Cheap Gaming PC Build Under $300 of 2020
 
 It was a tough task putting a $300 custom build together, but thanks to AMD's impressive range of APU's, we were able to do so while still achieving good levels of performance. At the heart of this build sits AMD's entry-level APU, the 2200G. It comes equipped with Vega 8 graphics, which are surprisingly good at handling low intensive games such as CS: GO and Fortnite.
 

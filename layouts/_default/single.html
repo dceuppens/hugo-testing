@@ -1,38 +1,48 @@
 {{ define "maincontent" }}
 
+
 <div class="ct-section">
-	<div class="ct-row">
-		<article class = "content-primary">
-			<div class ="content-section-label">
+	<article class="ct-section-main">
+		<div class="ct-section-row">
+			<div class ="ct-section-label">
 				<a href="{{ .Parent.URL }}" class="content-section-label--link">{{ .Parent.Name }}</a>
-      		</div>
-			<header class = "content-header">
-
-				<h1 class = "content-title">{{ .Title }}</h1>
-				<p class = "content-intro>">{{ .Description }}</p>
-			</header>
-
-			<div class="content-section-meta">
-				<p>Placeholder</p>
 			</div>
-			{{ .Content }}
-		</article>
-		<div class = "content-secondary">
-      		<div id = "toc">
-      			{{ .TableOfContents }}
-      		</div>
-      		<div class ="advertising">
-        		<img class="" src="http://placehold.it/250x600 " alt="">
-      		</div>
-    	</div>
-  		
+			<div class= "ct-section-primary">
+				<header class = "content-header">
+					<h1 class = "content-title">{{ .Title }}</h1>
+					<p class = "content-intro>">{{ .Description }}</p>
+				</header>
+			</div>
+		</div>
 
-	</div>
-
-</div>
-
-
- 
+		<div class="ct-section-row">
+			<div class ="ct-section-label">
+				 <p class="meta-data">Last updated on {{ .Lastmod }} by {{ $.Params.Author }}</p>
+			</div>
+			<div class= "ct-section-primary">
+					<p>{{$.Params.Mainimage}}</p>
+					<p>{{printf "%s*" $.Params.Mainimage}}</p>
+					
+					
+					<!--{{ $original := .Page.Resources.GetMatch (printf "*%s*" ($.Params.Mainimage)) }} -->
+					{{ $original := .Page.Resources.GetMatch (printf "*%s*" ($.Params.Mainimage)) }}
+					
+					<p>{{ $original}}</p>
+					{{ .Scratch.Set "image_large" ($original.Resize "916x") }}
+				<div class="content-body">
+					{{ .Content }}
+				</div>
+			</div>
+		</div>
+	</article>
+	<aside class = "ct-section-secondary">
+		<div class ="toc">
+	 		<p><strong>What's on this page</strong></p>
+			<nav class="tableofcontents">
+				{{ .TableOfContents }}
+			</nav>
+		</div>
+	</aside>
 
 {{ end }}
 

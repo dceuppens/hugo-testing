@@ -20,8 +20,7 @@
                 	    		<ul class="c-secondary-nav-bundle">
                     				<li class="c-secondary-nav__bundleitem"><a href="{{ .URL | absLangURL }}" class="c-secondary-nav__link">{{ .Name }}</a></li>
                     				{{ if .HasChildren }}
-                    					<li class="c-secondary-nav__bundleitem"><a href="#" class="c-secondary-nav__link">Tijdelijk</a></li>
-
+ 
                     					{{ range sort .Children }}
                     						<li class="c-secondary-nav__bundleitem"><a href="{{ .URL | absLangURL }}" class="c-secondary-nav__link">{{ .Name }}</a></li>
                     					{{ end }}
