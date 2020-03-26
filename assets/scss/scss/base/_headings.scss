@@ -29,9 +29,20 @@ h3  {
 
 	line-height: 1.2;
 	//margin-bottom: 1em;
+
+	&.c-alternative-product-headline {
+		padding: $pad-half 0;
+		}
+
+
 }
 
 .content-body-section > h3 {
+	
+	.c-alternative-product-headline {
+		margin: 1 0;
+		}
+
 	@media all and ( min-width: $bp-xl ) {
 		margin-left: -3em;
 	}

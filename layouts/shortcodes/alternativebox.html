@@ -1,0 +1,45 @@
+{{ $title := .Get 0 }}
+{{ $image := .Get 1 }}
+{{ $alt := .Get 2 }}
+{{ $price := .Get 3 }}
+{{ $url := .Get 4 }}
+{{ $buttonlabel := .Get 5 }}
+
+<div class = "c-alternative-product-media">
+<a href="{{ printf "%s" $url }}" >
+	<h3 class = "c-alternative-product-headline ">{{ $title}} </h3>
+	<div class = "c-alternative-product__body c-block-media__media c-block-media  c-block-media--alternative-large">
+		<div class = "c-alternative-product__media c-block-media__media">
+			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" $image ) }} 
+			{{ .Scratch.Set "image-normal" ($original.Resize  "115x") }}
+			{{ .Scratch.Set "image-large" ($original.Resize  "300x") }}
+			{{ $image_normal := .Scratch.Get "image-normal" }}
+			{{ $image_large := .Scratch.Get "image-large" }}
+
+			<img 
+		      alt= "{{ $alt }}"
+		      srcset="
+		          {{$image_large.RelPermalink}} 676w,
+		          {{$image_normal.RelPermalink}} 190w      
+		          "
+		     sizes="
+		        (min-width: 61.25em) 190px,
+		     		676px
+		        "
+		     src="{{$image_large.RelPermalink}}"  >
+		</div>
+		<div class = "c-alternative-product__content c-block-media__body">
+		 	<p class = "c-alternative-product__text">
+		 		{{ .Inner }}
+			</p>
+			<div class="c-alternative-product__cta">
+				<p class="c-product-media__pricevalue">{{ $price}}</p>
+				<div class="c-product-media__button">
+					<span class="media-button">{{ $buttonlabel }}</span>
+				</div>
+			</div>			 		
+
+		</div>
+	</div>
+</a>
+</div>

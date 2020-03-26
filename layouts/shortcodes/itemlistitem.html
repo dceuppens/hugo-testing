@@ -1,0 +1,22 @@
+<li class="lc-listitem type-normal--item">
+	<a href="{{ printf "%s" (.Get 0) }}" class="c-product-media">
+		<div class="c-product-media__media">
+
+			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" (.Get 1) ) }} 
+			{{ .Scratch.Set "image" ($original.Resize  "67x") }}
+			{{ $image := .Scratch.Get "image" }}
+			<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{.Get 3}}" class="product-media__img" />
+		</div>
+		<div class="c-product-media__body">
+			<span class="c-product-media-label">{{.Get 2}}</span>
+			<h3 class="c-product-media__headline">{{.Get 3}}</h3>
+			<p class="c-product-media__excerpt">{{.Get 4}}</p>
+		</div>
+		<div class="c-product-media__price">
+			<p class="c-product-media__pricevalue">{{.Get 5}}</p>
+		</div>
+		<div class="c-product-media__button">
+			<span class="media-button">view</span>
+		</div>
+	</a>
+</li>

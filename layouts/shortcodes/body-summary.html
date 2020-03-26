@@ -1,0 +1,20 @@
+
+{{ $plusarray := split (.Get 0) "," }}
+{{ $minarray  := split (.Get 1) "," }}
+{{ $price := .Get 2 }}
+
+<div class="content-body-summary">
+	<div class="content-body-swbox">
+		{{ range $plusarray }}
+		<p class="icon-plus-squared"> {{ . }} </p>
+		{{ end }}
+	
+		{{ range $minarray }}
+		<p class="icon-minus-squared"> {{ . }} </p>
+		{{ end }}
+	</div>
+	<a href="#" class="content-body-pricebox">
+		<p class="content-body-pricevalue">{{ $price }}</p>
+		<span class="media-button">Check current price</span>
+	</a>
+</div>

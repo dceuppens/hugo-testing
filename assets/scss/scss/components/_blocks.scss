@@ -262,7 +262,7 @@ Dit anders organiseren - per size & niet per type
     flex: 0 1 auto;
     
     transition: all $anim-speed-quick $anim-ease;
-    font-size: $font-size-small-2;
+    // font-size: $font-size-small-2;
     
     &:hover, &:focus {
         .c-block-media__headline {
@@ -279,7 +279,11 @@ Dit anders organiseren - per size & niet per type
         display: flex;
     }
 
-
+    @media all and (min-width: $bp-large) {
+        &.c-block-media--alternative-large {
+        display: flex;
+        }
+    }
 
     @media all and (min-width: $bp-med) {
         &.c-block-media--standard-medium, &.c-block-media--headline-medium{
@@ -292,6 +296,18 @@ Dit anders organiseren - per size & niet per type
         }       
     }
 }
+
+.c-alternative-product-media {
+    border-style: solid;
+    border-width: medium;
+    border-color: $color-utility-positive;
+    border-radius: 3px;
+    padding: 4px;
+
+    > a {
+        color: $color-text;
+    }
+ }
 
 /**
  * Media Container
@@ -313,11 +329,16 @@ Dit anders organiseren - per size & niet per type
             /*margin: 0 0 0 1em;*/ 
         /*} */
     
+
+
+
     @media all and (min-width: $bp-med) {
         .c-block-media--standard-medium > & {
             flex: 0 0 8.75em;
             padding-top: $pad-quarter;
         }
+
+
         .c-block-media--top-medium > &{
             display: block;
         }
@@ -337,9 +358,39 @@ Dit anders organiseren - per size & niet per type
         display: none;}
 
 
+   .c-block-media--alternative-large > & {
+        display: block;
+        padding: $pad-quarter 0;
+        margin: 0;
+    }
+
+
+
+    @media all and (min-width: $bp-large) {
+        .c-block-media--alternative-large > & {
+            flex: 0 0 10em;
+            padding-top: $pad-quarter;
+            margin: 0;
+        }
+    }
+
+
+
 }
 
 
+.c-alternative-product__media {
+    & img {
+        margin: 0 auto;
+        display: block;
+    }
+    @media all and (min-width: $bp-large) {
+        & img{
+        margin: 0 auto ;
+        display: block;
+    }
+    }
+}
 
 .c-block-media__img {
     border-radius: $border-radius;
@@ -387,6 +438,13 @@ Dit anders organiseren - per size & niet per type
         }
        //flex: 1;
    }
+
+   @media all and (min-width: $bp-large) {
+        .c-block-body--alternative-large > & {
+            flex: 1 0 auto;
+            //padding-top: $pad-quarter;
+        }
+    }
 }
 
 
@@ -410,6 +468,22 @@ Dit anders organiseren - per size & niet per type
 
 }
 
+
+
+.c-alternative-product__cta {
+    display: flex;
+    justify-content: flex-end;
+
+    .c-product-media__pricevalue{
+        flex: 0 1 auto;
+        }
+
+    .c-product-media__button{
+        flex: 0 1 auto;
+        margin: 0 0 0 $space-double;
+        }
+    
+}
 
 
 

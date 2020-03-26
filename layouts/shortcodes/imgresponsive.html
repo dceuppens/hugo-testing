@@ -1,29 +1,35 @@
 {{ $original := .Page.Resources.GetMatch (printf "%s*" (.Get 0)) }}
 
 {{ $alt := .Get 1 }}
-{{ .Scratch.Set "image_large" ($original.Resize "916x") }}
+{{ .Scratch.Set "image_large" ($original.Resize "712x jpg") }}
 
-{{ .Scratch.Set "image_medium" ($original.Resize "756x") }}
-{{ .Scratch.Set "image_small" ($original.Resize "596x") }}
-{{ .Scratch.Set "image_small" ($original.Resize "596x") }}
-{{ .Scratch.Set "image_mobile" ($original.Resize "700x") }}
+{{ .Scratch.Set "image_medium" ($original.Resize "568x jpg") }}
+{{ .Scratch.Set "image_small" ($original.Resize "458x jpg") }}
+
+{{ .Scratch.Set "image_mobile" ($original.Resize "676x jpg") }}
 {{ $image_large := .Scratch.Get "image_large" }}
 {{ $image_medium := .Scratch.Get "image_medium" }}
 {{ $image_small := .Scratch.Get "image_small" }}
 {{ $image_mobile := .Scratch.Get "image_mobile" }}
 
-<img srcset="{{$image_large.RelPermalink}} 916w,
-              {{$image_medium.RelPermalink}} 756w,
-              {{$image_small.RelPermalink}} 596w,
-              {{$image_mobile.RelPermalink}} 700w"
-     sizes="(min-width: 1300px) 916px,
-     		(min-width: 1140px) 756px,
-     		(min-width: 980px) 596px,
-     		700px"
-     src="{{$image_large.RelPermalink}}" alt="
-     	{{ with .Inner }}
-			{{ . }}
-		{{ else }}
-			.{{ $alt }}
-		{{ end }}">
-
+<img 
+      alt=
+        {{ with .Inner }}
+       "{{ . }}"
+      {{ else }}
+       "{{ $alt }}"
+      {{ end }} 
+      srcset="
+          {{$image_large.RelPermalink}} 712w,
+          {{$image_mobile.RelPermalink}} 676w,
+          {{$image_medium.RelPermalink}} 568w,
+          {{$image_small.RelPermalink}} 458w
+         
+          "
+     sizes="
+        (min-width: 81.25em) 712px,
+     		(min-width: 71.25em) 568px,
+     		(min-width: 61.25em) 458px,
+     		676px
+        "
+     src="{{$image_large.RelPermalink}}"  >
