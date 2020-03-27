@@ -93,7 +93,7 @@ Dit anders organiseren - per size & niet per type
     flex-wrap: nowrap;
 
     transition: all $anim-speed-quick $anim-ease;
-    font-size: $font-size-small-2;
+    //font-size: $font-size-small-2;
     
 	&:hover, &:focus {
 		.c-block-product__headline {

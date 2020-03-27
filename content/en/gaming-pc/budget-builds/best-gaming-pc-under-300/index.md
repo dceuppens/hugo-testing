@@ -155,6 +155,6 @@ With that in mind, let's take a look at some of the best value for money prebuil
 At the higher end of the performance spectrum comes the very impressive CYBERPOWERPC Gamer Supreme Liquid cool gaming PC. Let's be honest, if you're looking to play Fortnite, and Fortnite only, this is going to be overkill for your needs. However, if you need to run highly demanding tasks like rendering tasks, this PC is going to be exactly what you need.
 A:s
 
-Lijn toevoegen wordt beeld groter
+
 
 {{< /alternativebox >}}

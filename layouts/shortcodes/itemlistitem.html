@@ -5,7 +5,7 @@
 			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" (.Get 1) ) }} 
 			{{ .Scratch.Set "image" ($original.Resize  "67x") }}
 			{{ $image := .Scratch.Get "image" }}
-			<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{.Get 3}}" class="product-media__img" />
+			<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{.Get 3}}" class="product-media__img" loading="lazy"/>
 		</div>
 		<div class="c-product-media__body">
 			<span class="c-product-media-label">{{.Get 2}}</span>
