@@ -686,7 +686,7 @@
     	display: flex;
     	flex-direction: row;
     	flex-wrap: nowrap;
-    	justify-content: space-between;
+    	/* justify-content: space-between; */
     	width: 100%;
 
 	}
@@ -808,7 +808,7 @@
 [class*="col-"] {
 	padding-top: 0;
 	padding-bottom: 10px;
-	flex: 3 1 auto;
+	flex: 0 1 auto;
 
 	@media all and ( min-width: $bp-med ) {
 	    display: flex;
