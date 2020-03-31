@@ -453,7 +453,7 @@ Dit anders organiseren - per size & niet per type
     transition: all $anim-speed-quick $anim-ease;
 
 
-    display: none;
+    //display: none;
 
     @media all and (min-width: $bp-large) {
        display: block;

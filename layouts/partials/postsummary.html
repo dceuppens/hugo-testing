@@ -1,0 +1,69 @@
+
+
+<a href="{{.page.Permalink}}" class="c-block-media c-block-media--standard-small c-block-media--top-medium ">
+	<div class="c-block-media__media">
+		
+
+		{{ $original := .page.Resources.GetMatch ( printf "%s*" .page.Params.Mainimage ) }}
+		
+		{{ .Scratch.Set "2col_image_large" ($original.Resize "516x") }}
+		{{ .Scratch.Set "2col_image_medium" ($original.Resize "468x") }}
+		{{ .Scratch.Set "2col_image_small" ($original.Resize "346x") }}
+		{{ .Scratch.Set "3col_image_large" ($original.Resize "340x") }}
+		{{ .Scratch.Set "3col_image_medium" ($original.Resize "308x") }}
+		{{ .Scratch.Set "3col_image_small" ($original.Resize "228x") }}
+		{{ .Scratch.Set "image_mobile" ($original.Resize "140x") }}
+
+
+		{{ $2col_image_large := .Scratch.Get "2col_image_large" }}
+		{{ $2col_image_medium := .Scratch.Get "2col_image_medium" }}
+		{{ $2col_image_small := .Scratch.Get "2col_image_small" }}
+
+		{{ $3col_image_large := .Scratch.Get "3col_image_large" }}
+		{{ $3col_image_medium := .Scratch.Get "3col_image_medium" }}
+		{{ $3col_image_small := .Scratch.Get "3col_image_small" }}
+		<p>2col_lage {{ $2col_image_large}}</p>
+		<p>{{ $3col_image_large}}</p>
+
+		{{ $image_mobile := .Scratch.Get "image_mobile" }}
+
+		{{  if eq .class "col-1-2" }} 
+			<p> url large {{$2col_image_large}}</p>
+			
+
+			<img srcset="{{$2col_image_large.RelPermalink}} 516w,
+			             {{$2col_image_medium.RelPermalink}} 468w,
+						 {{$2col_image_small.RelPermalink}} 346w, 
+						 {{$image_mobile.RelPermalink}} 140w"
+			 	  sizes="(min-width: 81.25em) 712px,
+						        (min-width: 71.25em) 756px,
+						        (min-width: 61.25em) 458px,
+						        676px"
+			 	  src="{{$2col_image_large.RelPermalink}}" 
+			 	  alt= "{{$.Params.Altmainimage}} col-1-2" 
+			      class="c-block-media__img" >
+		{{  else }} 
+
+			<img srcset="{{$3col_image_large.RelPermalink}} 340w,
+			             {{$3col_image_medium.RelPermalink}} 308w,
+						 {{$3col_image_small.RelPermalink}} 228w, 
+						 {{$image_mobile.RelPermalink}} 140w"
+			 	  sizes="(min-width: 81.25em) 712px,
+						        (min-width: 71.25em) 756px,
+						        (min-width: 61.25em) 458px,
+						        676px"
+			 	  src="{{$3col_image_large.RelPermalink}}" 
+			 	  alt= "{{$.Params.Altmainimage}} col-1-3" 
+			      class="c-block-media__img" >
+
+
+
+		{{  end }} 
+
+		
+	</div><!-- c-block-media__media -->
+	<div class="c-block-media__body">
+		<h3 class="c-block-media__headline"> {{ .page.Title }}</h3>
+		<p class="c-block-media__excerpt">{{ .page.Params.Description }}</p>
+	</div><!-- end c-block-media__body -->            
+</a>
