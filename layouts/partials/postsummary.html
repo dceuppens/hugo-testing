@@ -1,60 +1,60 @@
 
 
-<a href="{{.page.Permalink}}" class="c-block-media c-block-media--standard-small c-block-media--top-medium ">
+<a href="{{.context.Permalink}}" class="c-block-media c-block-media--standard-small c-block-media--top-medium ">
 	<div class="c-block-media__media">
 		
 
-		{{ $original := .page.Resources.GetMatch ( printf "%s*" .page.Params.Mainimage ) }}
+		{{ $original := .context.Resources.GetMatch ( printf "%s*" .context.Params.Mainimage ) }}
 		
-		{{ .Scratch.Set "2col_image_large" ($original.Resize "516x") }}
-		{{ .Scratch.Set "2col_image_medium" ($original.Resize "468x") }}
-		{{ .Scratch.Set "2col_image_small" ($original.Resize "346x") }}
-		{{ .Scratch.Set "3col_image_large" ($original.Resize "340x") }}
-		{{ .Scratch.Set "3col_image_medium" ($original.Resize "308x") }}
-		{{ .Scratch.Set "3col_image_small" ($original.Resize "228x") }}
-		{{ .Scratch.Set "image_mobile" ($original.Resize "140x") }}
+		{{ .context.Scratch.Set "2col_image_large" ($original.Resize "516x") }}
+		{{ .context.Scratch.Set "2col_image_medium" ($original.Resize "468x") }}
+		{{ .context.Scratch.Set "2col_image_small" ($original.Resize "346x") }}
+		{{ .context.Scratch.Set "3col_image_large" ($original.Resize "340x") }}
+		{{ .context.Scratch.Set "3col_image_medium" ($original.Resize "308x") }}
+		{{ .context.Scratch.Set "3col_image_small" ($original.Resize "228x") }}
+		{{ .context.Scratch.Set "image_mobile" ($original.Resize "140x") }}
 
 
-		{{ $2col_image_large := .Scratch.Get "2col_image_large" }}
-		{{ $2col_image_medium := .Scratch.Get "2col_image_medium" }}
-		{{ $2col_image_small := .Scratch.Get "2col_image_small" }}
+		{{ $2col_image_large := .context.Scratch.Get "2col_image_large" }}
+		{{ $2col_image_medium := .context.Scratch.Get "2col_image_medium" }}
+		{{ $2col_image_small := .context.Scratch.Get "2col_image_small" }}
 
-		{{ $3col_image_large := .Scratch.Get "3col_image_large" }}
-		{{ $3col_image_medium := .Scratch.Get "3col_image_medium" }}
-		{{ $3col_image_small := .Scratch.Get "3col_image_small" }}
-		<p>2col_lage {{ $2col_image_large}}</p>
-		<p>{{ $3col_image_large}}</p>
+		{{ $3col_image_large := .context.Scratch.Get "3col_image_large" }}
+		{{ $3col_image_medium := .context.Scratch.Get "3col_image_medium" }}
+		{{ $3col_image_small := .context.Scratch.Get "3col_image_small" }}
 
-		{{ $image_mobile := .Scratch.Get "image_mobile" }}
+		{{ $image_mobile := .context.Scratch.Get "image_mobile" }}
 
 		{{  if eq .class "col-1-2" }} 
-			<p> url large {{$2col_image_large}}</p>
+			
 			
 
 			<img srcset="{{$2col_image_large.RelPermalink}} 516w,
 			             {{$2col_image_medium.RelPermalink}} 468w,
 						 {{$2col_image_small.RelPermalink}} 346w, 
 						 {{$image_mobile.RelPermalink}} 140w"
-			 	  sizes="(min-width: 81.25em) 712px,
-						        (min-width: 71.25em) 756px,
-						        (min-width: 61.25em) 458px,
-						        676px"
+			 	  sizes="(min-width: 81.25em) 516px,
+						        (min-width: 71.25em) 468px,
+						        (min-width: 61.25em) 346px,
+						        140px"
 			 	  src="{{$2col_image_large.RelPermalink}}" 
-			 	  alt= "{{$.Params.Altmainimage}} col-1-2" 
-			      class="c-block-media__img" >
+			 	  alt= "{{.context.Params.Altmainimage}} col-1-2" 
+			      class="c-block-media__img"
+			      loading = "lazy" >
 		{{  else }} 
 
 			<img srcset="{{$3col_image_large.RelPermalink}} 340w,
 			             {{$3col_image_medium.RelPermalink}} 308w,
 						 {{$3col_image_small.RelPermalink}} 228w, 
 						 {{$image_mobile.RelPermalink}} 140w"
-			 	  sizes="(min-width: 81.25em) 712px,
-						        (min-width: 71.25em) 756px,
-						        (min-width: 61.25em) 458px,
-						        676px"
+			 	  sizes="(min-width: 81.25em) 340px,
+						        (min-width: 71.25em) 308px,
+						        (min-width: 61.25em) 228px,
+						        140px"
 			 	  src="{{$3col_image_large.RelPermalink}}" 
-			 	  alt= "{{$.Params.Altmainimage}} col-1-3" 
-			      class="c-block-media__img" >
+			 	  alt= "{{.context.Params.Altmainimage}}" 
+			      class="c-block-media__img"
+			      loading = "lazy" >
 
 
 
@@ -63,7 +63,7 @@
 		
 	</div><!-- c-block-media__media -->
 	<div class="c-block-media__body">
-		<h3 class="c-block-media__headline"> {{ .page.Title }}</h3>
-		<p class="c-block-media__excerpt">{{ .page.Params.Description }}</p>
+		<h3 class="c-block-media__headline"> {{ .context.Title }}</h3>
+		<p class="c-block-media__excerpt">{{ .context.Params.Description }}</p>
 	</div><!-- end c-block-media__body -->            
 </a>
