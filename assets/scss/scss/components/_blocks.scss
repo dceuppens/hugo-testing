@@ -319,7 +319,7 @@ Dit anders organiseren - per size & niet per type
 
     .c-block-media--standard-small > & {
         flex: 0 0 8.75em;
-        padding-top: $pad-quarter;
+        // padding-top: $pad-quarter;
     }
     .c-block-media--top-small > & {
         display: block;
@@ -335,7 +335,7 @@ Dit anders organiseren - per size & niet per type
     @media all and (min-width: $bp-med) {
         .c-block-media--standard-medium > & {
             flex: 0 0 8.75em;
-            padding-top: $pad-quarter;
+            //padding-top: $pad-quarter;
         }
 
 
@@ -422,7 +422,11 @@ Dit anders organiseren - per size & niet per type
         display: block;
         width: 100%;
     }
-     
+
+    &.center  {
+        text-align: center;
+        
+    }
 
     @media all and (min-width: $bp-med) {
            
@@ -452,7 +456,9 @@ Dit anders organiseren - per size & niet per type
 .c-block-media__excerpt {
     transition: all $anim-speed-quick $anim-ease;
 
-
+    li {
+        padding: $pad-quarter 0;
+    }
     //display: none;
 
     @media all and (min-width: $bp-large) {

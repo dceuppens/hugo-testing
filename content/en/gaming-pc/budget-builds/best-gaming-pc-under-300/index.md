@@ -5,12 +5,13 @@ Lastmod = "2020-03-17"
 description = "Check out our best budget gaming PC for under $300 of 2020 featuring an AMD APU, 16GB DDR4 RAM and an SSD built and tested by our team of PC experts."
 
 tags = [".vimrc", "plugins", "spf13-vim", "vim"]
-title = "Best Cheap Gaming PC Build Under $300 in 2020"
+title = "Best Cheap Gaming PC Build Under $300"
 
 Author = "Dirk Ceuppens"
 Mainimage = "best-gaming-pc-build-under-300"
 Altmainimage ="Dit is een alt"
 Captionmainimage = "Dit is een caption"
+Addyear = "true"
 
 [menu]
 [menu.main]

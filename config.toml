@@ -41,7 +41,12 @@ theme = "Mainroad"
     baseURL = "https://www.2pwngear.com"
       [languages.en.params]
       linkedin = "https://linkedin.com/whoever"
-
+      displayURL = "2PWNGear.com"
+      ownedby = "is a property of"
+      about = "About"
+      privacy = "Privacy"
+      contact = "Contact"
+      disclaimer = "Advertising policy"
 
   [languages.nl-BE]
     languageCode = "nl-BE"
@@ -53,7 +58,13 @@ theme = "Mainroad"
       linkedin = "https://linkedin.com/fr/whoever"
       [languages.nl-BE.params.navigation]
         help = "Help"
- 
+        displayURL = "2PWNGear.be"
+        ownedby = "is een website van"
+        about = "Over ons"
+        privacy = "Privacy"
+        contact = "Contact"
+        disclaimer = "Disclaimer"
+
   [languages.fr-BE]
     languageCode = "fr-BE"
     languageName = "Français (Belgique)"
@@ -65,6 +76,12 @@ theme = "Mainroad"
       linkedin = "https://linkedin.com/fr/whoever"
       [languages.fr-BE.params.navigation]
         help = "Aide"
+        displayURL = "2PWNGear.be"
+        ownedby = "fait partie de"
+        about = "Qui nous sommes"
+        privacy = "Vie privrée"
+        disclaimer = "Disclaimer"
+        contact = "Contact"
 
 
   [languages.nl-NL]
@@ -77,4 +94,9 @@ theme = "Mainroad"
       linkedin = "https://linkedin.com/fr/whoever"
       [languages.nl-NL.params.navigation]
         help = "Hulp"
- 
+        displayURL = "2PWNGear.nl" 
+        ownedby = "is een website van"
+        about = "Over ons"
+        privacy = "Privacy"
+        contact = "Contact"
+        disclaimer = "Disclaimer"

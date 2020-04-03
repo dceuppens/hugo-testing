@@ -1,15 +1,22 @@
-	</div><!-- .wrapper -->
-		<footer class="footer">
-			<div class="container container-inner">
-				<div class="footer__copyright">&copy; {{ now.Format "2006" }} {{ .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
-			</div>
-		</footer>
-	</div><!-- .container-outer -->
+<footer class="c-footer">
 
-<script>
-	var navigation = responsiveNav(".menu", {
-		navClass: "menu--collapse",
-	});
-</script>
-</body>
-</html>
+  <!--<div class="l"> -->
+    
+    <nav class="c-footer-nav">
+    
+      <ul class="c-footer-nav__list">
+    
+        <li class="c-footer-nav__item"><a href="#" class="c-footer-nav__link">{{ .Site.Params.About }}</a></li>
+        <li class="c-footer-nav__item"><a href="#" class="c-footer-nav__link">{{ .Site.Params.Privacy }}</a></li>
+        <li class="c-footer-nav__item"><a href="#" class="c-footer-nav__link">{{ .Site.Params.Contact }}</a></li>
+        <li class="c-footer-nav__item"><a href="#" class="c-footer-nav__link">{{ .Site.Params.Disclaimer }}</a></li>
+    
+      </ul><!--end c-footer-nav__list-->
+    
+    </nav><!--end c-footer-nav-->  
+     <p class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Params.DisplayURL }} . All rights reserved. </a></p>
+    <p class="c-footer__info">{{ .Site.Params.DisplayURL }} {{ .Site.Params.ownedby }} <strong><a href="https://www.track-media.net">TrackMedia GCV</a></strong> , Grotesteenweg 473, 2018 Antwerp, Belgium (VAT: BE 0679.938.623)</p>
+    
+   <!--</div>  --><!-- end l -->
+
+</footer><!-- end c-footer -->		

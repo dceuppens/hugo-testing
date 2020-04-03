@@ -1,0 +1,95 @@
+
+
+<a href="{{.context.Permalink}}" class="{{ ( printf "%s" .aclass ) }}" >
+	<div class="c-block-media__media">
+		{{ .context.Scratch.Set "description" "" }}
+		{{ $original := .context.Resources.GetMatch ( printf "%s*" .context.Params.Mainimage ) }}
+		
+		{{  if or (in .aclass "c-block-media--headline-medium") (in .aclass "c-block-media--top-medium")  }} 
+			{{  if or (in .class "col-3-4") (in .class "col-1-2")  }} 		
+				
+				{{ .context.Scratch.Set "resize_large" "545" }}			
+				{{ .context.Scratch.Set "resize_medium" "494" }}				
+				{{ .context.Scratch.Set "resize_small" "366" }}
+				{{ .context.Scratch.Set "resize_mobile" "691" }}				
+				
+				{{ .context.Scratch.Set "description" .context.Params.Description  }}
+
+			{{  else }}
+				
+
+				{{ .context.Scratch.Set "resize_large" "254" }}			
+				{{ .context.Scratch.Set "resize_medium" "230" }}				
+				{{ .context.Scratch.Set "resize_small" "170" }}
+				{{ .context.Scratch.Set "resize_mobile" "140" }}				
+
+				{{ .context.Scratch.Set "description" (.context.Params.Description | truncate 80) }}
+
+			{{  end }}
+			
+			{{ .context.Scratch.Set "image_large" ($original.Resize  (printf "%s%s" (.context.Scratch.Get "resize_large") "x")) }}
+			{{ .context.Scratch.Set "image_medium" ($original.Resize (printf "%s%s" (.context.Scratch.Get "resize_medium") "x")) }}
+			{{ .context.Scratch.Set "image_small" ($original.Resize (printf "%s%s" (.context.Scratch.Get "resize_small") "x")) }}
+			{{ .context.Scratch.Set "image_mobile" ($original.Resize (printf "%s%s" (.context.Scratch.Get "resize_mobile") "x")) }}
+
+
+				
+			{{ $image_large := .context.Scratch.Get "image_large" }}
+			{{ $image_medium := .context.Scratch.Get "image_medium" }}
+			{{ $image_small := .context.Scratch.Get "image_small" }}
+			{{ $image_mobile := .context.Scratch.Get "image_mobile" }}
+
+
+			{{ $width_large_w :=   printf "%s%s" (.context.Scratch.Get "resize_large") "w" }}
+			{{ $width_medium_w :=  printf "%s%s" (.context.Scratch.Get "resize_medium") "w" }}
+			{{ $width_small_w :=   printf "%s%s" (.context.Scratch.Get "resize_small") "w" }}
+			{{ $width_mobile_w :=  printf "%s%s" (.context.Scratch.Get "resize_mobile") "w" }}
+
+
+
+			{{ $width_large_px :=   printf "%s%s" (.context.Scratch.Get "resize_large") "px" }}
+			{{ $width_medium_px :=  printf "%s%s" (.context.Scratch.Get "resize_medium") "px" }}
+			{{ $width_small_px :=   printf "%s%s" (.context.Scratch.Get "resize_small") "px" }}
+			{{ $width_mobile_px :=  printf "%s%s" (.context.Scratch.Get "resize_mobile") "pw" }}
+
+
+				<img srcset="{{$image_large.RelPermalink}} {{ $width_large_w }},
+							 {{$image_medium.RelPermalink}} {{ $width_medium_w }},
+				             {{$image_small.RelPermalink}} {{ $width_small_w }} ,
+							 {{$image_mobile.RelPermalink}} {{ $width_mobile_w}}"
+							 
+				 	  sizes="(min-width: 81.25em) {{ $width_large_px }},
+	   				         (min-width: 61.25em) {{ $width_medium_px }},
+							 (min-width: 46.25em) {{ $width_small_px }},
+							 {{ $width_mobile_px }}"
+				 	  src="{{$image_large.RelPermalink}}" 
+				 	  alt= "{{.context.Params.Altmainimage}}" 
+				      class="c-block-media__img"
+				      loading = "lazy" >
+			
+			
+			
+			
+			
+		{{  else }} 
+			{{ .context.Scratch.Set "image_fix" ($original.Resize  "140x") }}
+			{{ $image := .context.Scratch.Get "image_fix" }}
+			{{ .context.Scratch.Set "description" (.context.Params.Description | truncate 80) }}
+				
+			
+			
+
+
+
+			<img src="{{$image.RelPermalink}}" alt="{{.context.Params.Altmainimage}}" width="140px" class="c-block-media__img" loading = "lazy"/>
+		{{  end }} 
+
+
+	</div><!-- c-block-media__media -->
+	<div class="c-block-media__body">
+		<h3 class="c-block-media__headline"> {{ .context.Title }}</h3>
+			{{ $description := .context.Scratch.Get "description" }}
+			<p class="c-block-media__excerpt">{{ $description }}</p>
+		
+	</div><!-- end c-block-media__body -->            
+</a>

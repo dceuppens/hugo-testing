@@ -1,0 +1,126 @@
+{{ define "maincontent" }}
+
+<div class = "lc-section">
+  <div class = "lc-sectionhead">
+    <h2>{{ .Params.category1 }}</h2>
+  </div>
+  <div class = "lc-sectionbody">
+    <div class="lc-row">
+      <div class="col-3-4 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          {{ with .Site.GetPage ( printf "%s" .Params.category1_main ) }}
+            {{ partial "postsummary_home" (dict "context" . "class" "col-3-4"  "aclass" "c-block-media c-block-media--top-small c-block-media--headline-medium media--reverse" )}}
+          {{ end }}
+          </div><!-- end lc-item -->
+      </div><!-- end col -->
+      <div class="col-1-4 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          {{ with .Site.GetPage ( printf "%s" .Params.category1_secondary ) }}
+            {{ partial "postsummary_home" (dict "context" . "class" "col-1-4"  "aclass" "c-block-media c-block-media--standard-small c-block-media--top-medium" )}}
+          {{ end }}
+
+        </div><!-- end lc-item -->
+      </div><!-- end col -->          
+    </div><!-- /.row -->
+    <div class="lc-row">
+      <div class="col-1-2 lc-itemblock">
+        <ul class="lc-itemlist">
+          <li class="lc-listitem type-normal--item">
+
+            {{ with .Site.GetPage ( printf "%s" .Params.category1_box1 ) }}
+                {{ partial "postsummary_home" (dict "context" . "class" "col-1-4"  "aclass" "c-block-media c-block-media--standard-small c-block-media--standard-medium" )}}
+            {{ end }}
+
+          </li><!-- end lc-listitem -->
+          <li class="lc-listitem type-normal--item">
+            {{ with .Site.GetPage ( printf "%s" .Params.category1_box2 ) }}
+                {{ partial "postsummary_home" (dict "context" . "class" "col-1-4"  "aclass" "c-block-media c-block-media--standard-small c-block-media--standard-medium" )}}
+            {{ end }}
+          </li><!-- end lc-listitem -->
+          <li class="lc-listitem type-normal--item">
+            {{ with .Site.GetPage ( printf "%s" .Params.category1_box3 ) }}
+                {{ partial "postsummary_home" (dict "context" . "class" "col-1-4"  "aclass" "c-block-media c-block-media--standard-small c-block-media--standard-medium" )}}
+            {{ end }}
+          </li><!-- end lc-listitem -->
+          <li class="lc-listitem type-normal--item">
+            {{ with .Site.GetPage ( printf "%s" .Params.category1_box4 ) }}
+                {{ partial "postsummary_home" (dict "context" . "class" "col-1-4"  "aclass" "c-block-media c-block-media--standard-small c-block-media--standard-medium" )}}
+            {{ end }}
+            </li><!-- end lc-listitem -->
+        </ul><!-- end lc-itemlist -->
+      </div><!-- end col -->
+      <div class="col-1-2 lc-itemblock">
+        <div class="lc-item type-normal--item">
+
+          {{ with .Site.GetPage ( printf "%s" .Params.category1_tertiary ) }}
+            {{ partial "postsummary_home" (dict "context" . "class" "col-1-2" "aclass" "c-block-media c-block-media--top-small c-block-media--top-medium" )}}
+          {{ end }}
+
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+    </div><!-- /.row -->
+  </div> <!-- end lc-sectionbody -->
+</div> <!-- end lc-section -->
+
+
+<div class = "lc-section">
+  <div class = "lc-sectionhead">
+    <h2>Components</h2>
+  </div>
+  <div class = "lc-sectionbody">
+    <div class="lc-row">
+      <div class="col-1-3 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">Graphic Cards</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category_sub1_urls }}
+                    
+                    <li>{{ printf "%s" $element }}</li>
+                    {{ with $.GetPage "$element" }}
+
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+      <div class="col-1-3 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <a href="#" class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body">
+              <h3 class="c-block-media__headline">Lorem ipsum dolor sit (37 characters)</h3>
+              <p class="c-block-media__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div><!-- end c-block-media__body -->            
+          </a><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+      <div class="col-1-3 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <a href="#" class="c-block-media c-block-media--top-small c-block-medi--top-medium ">
+            <div class="c-block-media__media">
+              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body">
+              <h3 class="c-block-media__headline">Lorem ipsum dolor sit (37 characters)</h3>
+              <p class="c-block-media__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div><!-- end c-block-media__body -->            
+          </a><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+
+    </div><!-- /.row -->
+  </div><!-- end lc sectionbody -->
+</div> <!-- end lc section -->
+
+
+{{ end }}

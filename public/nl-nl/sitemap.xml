@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.2pwngear.nl/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.2pwngear.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-be"
+                href="https://www.2pwngear.be/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.nl/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.2pwngear.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-be"
+                href="https://www.2pwngear.be/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.nl/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.2pwngear.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-be"
+                href="https://www.2pwngear.be/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/tags/"
+                />
+  </url>
+  
+</urlset>

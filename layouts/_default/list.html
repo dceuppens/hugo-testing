@@ -62,6 +62,7 @@
 					
 							<div class="{{ (printf "%s" (.Scratch.Get "class"))}} lc-itemblock">
 								<div class="lc-item type-normal--item">
+									
 									{{ partial "postsummary" (dict "context" . "class" (.Scratch.Get "class")) }}
 	
 								</div><!-- end lc-item -->

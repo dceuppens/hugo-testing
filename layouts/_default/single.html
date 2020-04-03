@@ -9,8 +9,13 @@
 			</div>
 			<div class= "ct-section-primary">
 				<header class = "content-header">
-					<h1 class = "content-title">{{ .Title }}</h1>
+					{{ if eq .Params.AddYear "true" }}
+						<h1 class = "content-title">{{ .Title }} {{ i18n "in" }} {{ now.Format "2006" }}</h1>
+					{{ else  }}
+						<h1 class = "content-title">{{ .Title }}</h1>
+					{{ end  }}
 					<p class = "content-intro>">{{ .Description }}</p>
+
 				</header>
 			</div>
 		</div>
@@ -43,7 +48,8 @@
 						        (min-width: 61.25em) 458px,
 						        676px"
 						 src="{{$image_large.RelPermalink}}" 
-						 alt= "{{$.Params.Altmainimage}}" >
+						 alt= "{{$.Params.Altmainimage}}" 
+						 loading = "lazy">
 
 					<figcaption class="content-media__caption"> {{$.Params.Captionmainimage}} </figcaption>
 				</figure>
