@@ -17,10 +17,41 @@
 	{{- end }}
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed:700&amp;font-display=swap" rel="stylesheet">
+	<style>	
+	@font-face {
+  		font-family: 'fontello';
+  		{{ if eq .Site.Language.LanguageName "Nederlands (België)" }}
+			src: url('/nl/fonts/fontello.eot');
+  			src: url('/nl/fonts/fontello.eot#iefix') format('embedded-opentype'),
+       			 url('/nl/fonts/fontello.woff2') format('woff2'),
+       			 url('/nl/fonts/fontello.woff') format('woff'),
+       			 url('/nl/fonts/fontello.ttf') format('truetype'),
+       			 url('/nl/fonts/fontello.svg#fontello') format('svg');
+  		
+  		{{ else if eq .Site.Language.LanguageName "Français (Belgique)" }}
+			src: url('/fr/fonts/fontello.eot');
+  			src: url('/fr/fonts/fontello.eot#iefix') format('embedded-opentype'),
+       			 url('/fr/fonts/fontello.woff2') format('woff2'),
+       			 url('/fr/fonts/fontello.woff') format('woff'),
+       			 url('/fr/fonts/fontello.ttf') format('truetype'),
+       			 url('/fr/fonts/fontello.svg#fontello') format('svg');
+   		{{ else}}
+			src: url('/fonts/fontello.eot');
+  			src: url('/fonts/fontello.eot#iefix') format('embedded-opentype'),
+       			 url('/fonts/fontello.woff2') format('woff2'),
+       			 url(' /fonts/fontello.woff') format('woff'),
+       			 url('/fonts/fontello.ttf') format('truetype'),
+       			 url('/fonts/fontello.svg#fontello') format('svg');
+		{{ end }}
+  		font-weight: normal;
+  		font-style: normal;		
+  		
+	}
+	</style>
 	{{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
 	{{ $style := resources.Get "../assets/scss/style.scss" | resources.ToCSS $options }}
-	
-	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	
 	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 	{{ template "_internal/google_analytics_async.html" . }}
@@ -50,6 +81,6 @@
     {{ $globalJS := $defaultjs | resources.Minify | resources.Fingerprint }}
 
     
-	<script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}"></script>
+	<script src="{{ $globalJS.RelPermalink }}" integrity="{{ $globalJS.Data.Integrity }}" crossOrigin="anonymous"></script>
 	
 </body>

@@ -1,0 +1,46 @@
+{{ if  .imageref }}
+  {{ $original := .context.Resources.GetMatch ( printf "%s*" .imageref ) }}
+
+    {{ .context.Scratch.Set "image_large" ($original.Resize  (printf "%s%s" .large "x")) }}
+    {{ .context.Scratch.Set "image_medium" ($original.Resize (printf "%s%s" .medium "x")) }}
+    {{ .context.Scratch.Set "image_small" ($original.Resize (printf "%s%s" .small "x")) }}
+    {{ .context.Scratch.Set "image_mobile" ($original.Resize (printf "%s%s" .mobile "x")) }}
+
+
+      
+    {{ $image_large := .context.Scratch.Get "image_large" }}
+    {{ $image_medium := .context.Scratch.Get "image_medium" }}
+    {{ $image_small := .context.Scratch.Get "image_small" }}
+    {{ $image_mobile := .context.Scratch.Get "image_mobile" }}
+
+
+    {{ $width_large_w :=   printf "%s%s" .large "w" }}
+    {{ $width_medium_w :=  printf "%s%s" .medium "w" }}
+    {{ $width_small_w :=   printf "%s%s" .small "w" }}
+    {{ $width_mobile_w :=  printf "%s%s" .mobile "w" }}
+
+
+
+    {{ $width_large_px :=   printf "%s%s" .large "px" }}
+    {{ $width_medium_px :=  printf "%s%s" .medium "px" }}
+    {{ $width_small_px :=   printf "%s%s" .small "px" }}
+    {{ $width_mobile_px :=  printf "%s%s" .mobile "px" }}
+
+            <img srcset="{{$image_large.RelPermalink}} {{ $width_large_w }},
+                   {{$image_medium.RelPermalink}} {{ $width_medium_w }},
+                         {{$image_small.RelPermalink}} {{ $width_small_w }} ,
+                   {{$image_mobile.RelPermalink}} {{ $width_mobile_w}}"
+                   
+                sizes="(min-width: 81.25em) {{ $width_large_px }},
+                         (min-width: 61.25em) {{ $width_medium_px }},
+                   (min-width: 46.25em) {{ $width_small_px }},
+                   {{ $width_mobile_px }}"
+                src="{{$image_large.RelPermalink}}" 
+                alt= "{{ .alt }}" 
+                  class="{{ ( printf "%s" .aclass ) }} "
+                  loading = "lazy" >
+      
+
+ {{ else}}
+  <p>Houston problem</p>
+ {{ end}}

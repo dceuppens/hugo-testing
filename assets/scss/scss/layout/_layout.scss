@@ -433,6 +433,11 @@
 	border-bottom: $border-small solid $color-border;
 	margin: $pad 0;
 
+	&:first-child {
+		
+		padding-bottom: $pad;
+	}
+
 }
 
 .content-body-section ul{ // moet naar lists.scss & hernoemen als class

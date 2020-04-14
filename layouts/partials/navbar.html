@@ -1,18 +1,24 @@
 		<header class="c-header">
 			<div class="c-header__controls promote-layer">
 				<a href="/" class="c-logo-link">
+				{{ if eq .Site.Language.LanguageName "Nederlands (België)" }}
+				<img src="/nl/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
+				{{ else if eq .Site.Language.LanguageName "Français (Belgique)" }}
+				<img src="/fr/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
+				{{ else}}
 				<img src="/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
+				{{ end }}
 				</a><!-- end c-logo -->			
 
 				<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-				<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
+				<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">{{ i18n "search" }}</span></a>
 				{{ partial "menu.html" . }}
 
 
 		        <div class="c-search-form">
 				    <form method="get" action="../search.html" class="c-search-form__content">
 				    	<label for="search" class="c-search-form__label is-vishidden">Search the site</label>
-				    	<input name="q" type="search" id="search" class="c-search-form__input" placeholder="Search the site" />
+				    	<input name="q" type="search" id="search" class="c-search-form__input" placeholder={{ i18n "search" }} />
 				    	<button type="submit" class="c-search-form__button "><i class="icon-search"></i></button>
 				    </form>
 				</div>

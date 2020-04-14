@@ -50,7 +50,7 @@
 			{{ $width_large_px :=   printf "%s%s" (.context.Scratch.Get "resize_large") "px" }}
 			{{ $width_medium_px :=  printf "%s%s" (.context.Scratch.Get "resize_medium") "px" }}
 			{{ $width_small_px :=   printf "%s%s" (.context.Scratch.Get "resize_small") "px" }}
-			{{ $width_mobile_px :=  printf "%s%s" (.context.Scratch.Get "resize_mobile") "pw" }}
+			{{ $width_mobile_px :=  printf "%s%s" (.context.Scratch.Get "resize_mobile") "px" }}
 
 
 				<img srcset="{{$image_large.RelPermalink}} {{ $width_large_w }},

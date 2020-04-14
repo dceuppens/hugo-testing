@@ -65,26 +65,129 @@
 
 <div class = "lc-section">
   <div class = "lc-sectionhead">
-    <h2>Components</h2>
+    <h2>{{ .Params.category2 }}</h2>
   </div>
   <div class = "lc-sectionbody">
     <div class="lc-row">
-      <div class="col-1-3 lc-itemblock">
+       <div class="col-1-4 lc-itemblock">
         <div class="lc-item type-normal--item">
           <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
             <div class="c-block-media__media">
-              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
             </div><!-- c-block-media__media -->
             <div class="c-block-media__body center">
-              <h3 class="c-block-media__headline">Graphic Cards</h3>
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
               <ul class="c-block-media__excerpt">
-                {{ range $element := .Params.category_sub1_urls }}
-                    
-                    <li>{{ printf "%s" $element }}</li>
-                    {{ with $.GetPage "$element" }}
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+     <div class="col-1-4 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+      <div class="col-1-4 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+       <div class="col-1-4 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+ 
+    </div><!-- /.row -->
+  </div><!-- end lc sectionbody -->
+</div> <!-- end lc section -->
 
-                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                  {{ end }}
+<div class = "lc-section">
+  <div class = "lc-sectionhead">
+    <h2>{{ .Params.category2 }}</h2>
+  </div>
+  <div class = "lc-sectionbody">
+    <div class="lc-row">
+       <div class="col-1-3 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
+            </div><!-- end c-block-media__body -->            
+          </div><!-- end c-block-media -->
+        </div><!-- end lc-item -->
+      </div><!-- end col -->
+     <div class="col-1-3 lc-itemblock">
+        <div class="lc-item type-normal--item">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+            <div class="c-block-media__media">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
+            </div><!-- c-block-media__media -->
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
                 {{ end }}
               </ul>
             </div><!-- end c-block-media__body -->            
@@ -93,31 +196,24 @@
       </div><!-- end col -->
       <div class="col-1-3 lc-itemblock">
         <div class="lc-item type-normal--item">
-          <a href="#" class="c-block-media c-block-media--top-small c-block-media--top-medium ">
+          <div class="c-block-media c-block-media--top-small c-block-media--top-medium ">
             <div class="c-block-media__media">
-              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
+              {{ partial "img_responsive.html" (dict "context" . "imageref" .Params.category2_sub1_image "class" "c-block-media__img"  "large" "341" "medium" "310" "small" "228" "mobile" "681"  "alt" (print "%s" .Params.category2_sub1_alt)  ) }}
             </div><!-- c-block-media__media -->
-            <div class="c-block-media__body">
-              <h3 class="c-block-media__headline">Lorem ipsum dolor sit (37 characters)</h3>
-              <p class="c-block-media__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="c-block-media__body center">
+              <h3 class="c-block-media__headline">{{ .Params.category2_sub1_title }}</h3>
+              <ul class="c-block-media__excerpt">
+                {{ range $element := .Params.category2_sub1_urls }}
+                    {{ with $.Site.GetPage $element }}
+                      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                {{ end }}
+              </ul>
             </div><!-- end c-block-media__body -->            
-          </a><!-- end c-block-media -->
+          </div><!-- end c-block-media -->
         </div><!-- end lc-item -->
       </div><!-- end col -->
-      <div class="col-1-3 lc-itemblock">
-        <div class="lc-item type-normal--item">
-          <a href="#" class="c-block-media c-block-media--top-small c-block-medi--top-medium ">
-            <div class="c-block-media__media">
-              <img class="c-block-media__img" src="https://placehold.it/675x305" alt="">
-            </div><!-- c-block-media__media -->
-            <div class="c-block-media__body">
-              <h3 class="c-block-media__headline">Lorem ipsum dolor sit (37 characters)</h3>
-              <p class="c-block-media__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div><!-- end c-block-media__body -->            
-          </a><!-- end c-block-media -->
-        </div><!-- end lc-item -->
-      </div><!-- end col -->
-
+ 
     </div><!-- /.row -->
   </div><!-- end lc sectionbody -->
 </div> <!-- end lc section -->

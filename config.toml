@@ -1,6 +1,8 @@
 DefaultContentLanguage = "en"
 copyright = "TrackMedia GCV - BE 0679.938.623"
 
+
+
 theme = "Mainroad"
 
 [menu]
@@ -54,49 +56,50 @@ theme = "Mainroad"
     title = "2PWNGear - dé specialist in gaming PC's"
     weight = 20
     baseURL = "https://www.2pwngear.be/nl"
+    contentDir = "content/nl-BE"
     [languages.nl-BE.params]
       linkedin = "https://linkedin.com/fr/whoever"
-      [languages.nl-BE.params.navigation]
-        help = "Help"
-        displayURL = "2PWNGear.be"
-        ownedby = "is een website van"
-        about = "Over ons"
-        privacy = "Privacy"
-        contact = "Contact"
-        disclaimer = "Disclaimer"
+      help = "Help"
+      displayURL = "2PWNGear.be"
+      ownedby = "is een website van"
+      about = "Over ons"
+      privacy = "Privacy"
+      contact = "Contact"
+      disclaimer = "Disclaimer"
 
   [languages.fr-BE]
     languageCode = "fr-BE"
     languageName = "Français (Belgique)"
-
+    contentDir = "content/nl-FR"
     title = "2PWNGear - le spécialiste de Gaming PC"
     weight = 30
     baseURL = "https://www.2pwngear.be/fr"
     [languages.fr-BE.params]
       linkedin = "https://linkedin.com/fr/whoever"
-      [languages.fr-BE.params.navigation]
-        help = "Aide"
-        displayURL = "2PWNGear.be"
-        ownedby = "fait partie de"
-        about = "Qui nous sommes"
-        privacy = "Vie privrée"
-        disclaimer = "Disclaimer"
-        contact = "Contact"
+
+      help = "Aide"
+      displayURL = "2PWNGear.be"
+      ownedby = "fait partie de"
+      about = "Qui nous sommes"
+      privacy = "Vie privrée"
+      disclaimer = "Disclaimer"
+      contact = "Contact"
 
 
   [languages.nl-NL]
     languageCode = "nl-NL"
     languageName = "Nederlands (Nederland)"
     title = "2PWNGear - dé specialist in gaming PC's"
+    contentDir = "content/nl-NL"
     weight = 40
     baseURL = "https://www.2pwngear.nl"
     [languages.nl-NL.params]
       linkedin = "https://linkedin.com/fr/whoever"
-      [languages.nl-NL.params.navigation]
-        help = "Hulp"
-        displayURL = "2PWNGear.nl" 
-        ownedby = "is een website van"
-        about = "Over ons"
-        privacy = "Privacy"
-        contact = "Contact"
-        disclaimer = "Disclaimer"
+
+      help = "Hulp"
+      displayURL = "2PWNGear.nl" 
+      ownedby = "is een website van"
+      about = "Over ons"
+      privacy = "Privacy"
+      contact = "Contact"
+      disclaimer = "Disclaimer"

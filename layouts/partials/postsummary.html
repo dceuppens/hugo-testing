@@ -5,61 +5,63 @@
 		
 
 		{{ $original := .context.Resources.GetMatch ( printf "%s*" .context.Params.Mainimage ) }}
-		
-		{{ .context.Scratch.Set "2col_image_large" ($original.Resize "516x") }}
-		{{ .context.Scratch.Set "2col_image_medium" ($original.Resize "468x") }}
-		{{ .context.Scratch.Set "2col_image_small" ($original.Resize "346x") }}
-		{{ .context.Scratch.Set "3col_image_large" ($original.Resize "340x") }}
-		{{ .context.Scratch.Set "3col_image_medium" ($original.Resize "308x") }}
-		{{ .context.Scratch.Set "3col_image_small" ($original.Resize "228x") }}
-		{{ .context.Scratch.Set "image_mobile" ($original.Resize "140x") }}
+		{{ if $original }}
+			{{ .context.Scratch.Set "2col_image_large" ($original.Resize "516x") }}
+			{{ .context.Scratch.Set "2col_image_medium" ($original.Resize "468x") }}
+			{{ .context.Scratch.Set "2col_image_small" ($original.Resize "346x") }}
+			{{ .context.Scratch.Set "3col_image_large" ($original.Resize "340x") }}
+			{{ .context.Scratch.Set "3col_image_medium" ($original.Resize "308x") }}
+			{{ .context.Scratch.Set "3col_image_small" ($original.Resize "228x") }}
+			{{ .context.Scratch.Set "image_mobile" ($original.Resize "140x") }}
 
 
-		{{ $2col_image_large := .context.Scratch.Get "2col_image_large" }}
-		{{ $2col_image_medium := .context.Scratch.Get "2col_image_medium" }}
-		{{ $2col_image_small := .context.Scratch.Get "2col_image_small" }}
+			{{ $2col_image_large := .context.Scratch.Get "2col_image_large" }}
+			{{ $2col_image_medium := .context.Scratch.Get "2col_image_medium" }}
+			{{ $2col_image_small := .context.Scratch.Get "2col_image_small" }}
 
-		{{ $3col_image_large := .context.Scratch.Get "3col_image_large" }}
-		{{ $3col_image_medium := .context.Scratch.Get "3col_image_medium" }}
-		{{ $3col_image_small := .context.Scratch.Get "3col_image_small" }}
+			{{ $3col_image_large := .context.Scratch.Get "3col_image_large" }}
+			{{ $3col_image_medium := .context.Scratch.Get "3col_image_medium" }}
+			{{ $3col_image_small := .context.Scratch.Get "3col_image_small" }}
 
-		{{ $image_mobile := .context.Scratch.Get "image_mobile" }}
+			{{ $image_mobile := .context.Scratch.Get "image_mobile" }}
 
-		{{  if eq .class "col-1-2" }} 
-			
-			
+			{{  if eq .class "col-1-2" }} 
+				
+				
 
-			<img srcset="{{$2col_image_large.RelPermalink}} 516w,
-			             {{$2col_image_medium.RelPermalink}} 468w,
-						 {{$2col_image_small.RelPermalink}} 346w, 
-						 {{$image_mobile.RelPermalink}} 140w"
-			 	  sizes="(min-width: 81.25em) 516px,
-						        (min-width: 71.25em) 468px,
-						        (min-width: 61.25em) 346px,
-						        140px"
-			 	  src="{{$2col_image_large.RelPermalink}}" 
-			 	  alt= "{{.context.Params.Altmainimage}} col-1-2" 
-			      class="c-block-media__img"
-			      loading = "lazy" >
-		{{  else }} 
+				<img srcset="{{$2col_image_large.RelPermalink}} 516w,
+				             {{$2col_image_medium.RelPermalink}} 468w,
+							 {{$2col_image_small.RelPermalink}} 346w, 
+							 {{$image_mobile.RelPermalink}} 140w"
+				 	  sizes="(min-width: 81.25em) 516px,
+							        (min-width: 71.25em) 468px,
+							        (min-width: 61.25em) 346px,
+							        140px"
+				 	  src="{{$2col_image_large.RelPermalink}}" 
+				 	  alt= "{{.context.Params.Altmainimage}} col-1-2" 
+				      class="c-block-media__img"
+				      loading = "lazy" >
+			{{  else }} 
 
-			<img srcset="{{$3col_image_large.RelPermalink}} 340w,
-			             {{$3col_image_medium.RelPermalink}} 308w,
-						 {{$3col_image_small.RelPermalink}} 228w, 
-						 {{$image_mobile.RelPermalink}} 140w"
-			 	  sizes="(min-width: 81.25em) 340px,
-						        (min-width: 71.25em) 308px,
-						        (min-width: 61.25em) 228px,
-						        140px"
-			 	  src="{{$3col_image_large.RelPermalink}}" 
-			 	  alt= "{{.context.Params.Altmainimage}}" 
-			      class="c-block-media__img"
-			      loading = "lazy" >
+				<img srcset="{{$3col_image_large.RelPermalink}} 340w,
+				             {{$3col_image_medium.RelPermalink}} 308w,
+							 {{$3col_image_small.RelPermalink}} 228w, 
+							 {{$image_mobile.RelPermalink}} 140w"
+				 	  sizes="(min-width: 81.25em) 340px,
+							        (min-width: 71.25em) 308px,
+							        (min-width: 61.25em) 228px,
+							        140px"
+				 	  src="{{$3col_image_large.RelPermalink}}" 
+				 	  alt= "{{.context.Params.Altmainimage}}" 
+				      class="c-block-media__img"
+				      loading = "lazy" >
 
 
 
+			{{  end }} 
+		{{  else }}
+			<p> Problem</p> 
 		{{  end }} 
-
 		
 	</div><!-- c-block-media__media -->
 	<div class="c-block-media__body">
