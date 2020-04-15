@@ -1,0 +1,29 @@
+{{ define "maincontent" }}
+
+
+<div class="ct-section">
+	<article class="ct-section-main">
+
+		<div class="ct-section-row">
+			<div class ="ct-section-label">
+				 <p class="meta-data">Last updated on {{ .Lastmod.Format "Jan 2, 2006"  }}</p>
+			</div>
+			<div class= "ct-section-primary">
+								<div class="content-body">
+					{{ .Content  }}
+
+				</div>
+			</div>
+		</div>
+	</article>
+	<aside class = "ct-section-secondary">
+		<div class ="toc">
+	 		<p><strong>What's on this page</strong></p>
+			<nav class="tableofcontents">
+				{{ .TableOfContents }}
+			</nav>
+		</div>
+	</aside>
+</div>
+
+{{ end }}

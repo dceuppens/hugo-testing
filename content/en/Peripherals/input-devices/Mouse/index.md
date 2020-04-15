@@ -6,6 +6,7 @@ description = "Check out our best budget gaming PC for under $300 of 2020 featur
 
 tags = [".vimrc", "plugins", "spf13-vim", "vim"]
 title = "The Best Gaming Mice in 2020"
+translationKey = "best-gaming-mouse"
 
 Author = "Dirk Ceuppens"
 Mainimage = "best-gaming-mouse"

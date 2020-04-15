@@ -12,6 +12,8 @@ Mainimage = "best-gaming-pc-build-under-300"
 Altmainimage ="Dit is een alt"
 Captionmainimage = "Dit is een caption"
 
+translationkey = "gaming-pc-800"
+
 [menu]
 [menu.main]
 		name = "$800 Gaming PC"	

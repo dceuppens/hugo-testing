@@ -1,7 +1,0 @@
-+++
-pagesection = "Knowledge"
-
-title = "Knowledge"
-
-
-+++

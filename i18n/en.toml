@@ -3,3 +3,6 @@ other = "in"
 
 [search]
 other = "Search the site"
+
+[translations]
+other = "Change language"

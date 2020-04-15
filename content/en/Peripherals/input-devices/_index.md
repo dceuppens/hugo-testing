@@ -1,6 +1,7 @@
 +++
 pagesection = "Input Devices"
 title = "Input Devices"
+translationKey = "input-devices"
 
 [menu]
 [menu.main]

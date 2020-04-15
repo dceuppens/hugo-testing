@@ -1,0 +1,10 @@
+{{ if .IsTranslated }}
+
+<ul class="c-footer-lang__list">
+	<li class="c-footer-lang__item" >{{ i18n "translations" }}: </li>
+    {{ range .Translations }}
+    <li class="c-footer-lang__item"><a href="{{ .Permalink }}" class="c-footer-lang__link">{{ .Language.LanguageName  }}</a></li>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}

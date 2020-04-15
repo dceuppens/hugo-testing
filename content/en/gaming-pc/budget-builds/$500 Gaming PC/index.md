@@ -11,7 +11,7 @@ Author = "Dirk Ceuppens"
 Mainimage = "best-gaming-pc-build-under-300"
 Altmainimage ="Dit is een alt"
 Captionmainimage = "Dit is een caption"
-
+translationkey = "best-gaming-pc-500"
 [menu]
 [menu.main]
 		name = "$500 Gaming PC"	

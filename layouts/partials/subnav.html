@@ -10,7 +10,7 @@
 	<ul class="c-sub-nav__list"> 
 	{{ range $sections.ByWeight}}
 			
-			<li><a {{ if and (.File) (eq .File.Dir $currentDir) }}class="active" {{ end }}href="{{ .Permalink }}">{{ .Title }} </a></li>
+				<li><a {{ if and (.File) (eq .File.Dir $currentDir) }}class="active" {{ end }}href="{{ .Permalink }}">{{ .Title }} </a></li>
 			
 	{{ end }}
 	</ul>

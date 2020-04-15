@@ -12,6 +12,7 @@ Mainimage = "best-gaming-pc-build-under-300"
 Altmainimage ="Dit is een alt"
 Captionmainimage = "Dit is een caption"
 Addyear = "true"
+translationkey = "best-gaming-pc-300"
 
 [menu]
 [menu.main]

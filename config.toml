@@ -5,32 +5,8 @@ copyright = "TrackMedia GCV - BE 0679.938.623"
 
 theme = "Mainroad"
 
-[menu]
-
-        [[menu.main]]
-        name = "Gaming PC"
-        identifier = "gaming-pc"
-        url = "/gaming-pc/"
-        weight = 20 
 
 
-        [[menu.main]]
-        name = "Components"
-        identifier = "components"
-        url = "/components/"
-        weight = 30
-
-        [[menu.main]]
-        name = "Peripherals"
-        identifier = "peripherals"
-        url = "/peripherals/"
-        weight = 40
-
-        [[menu.main]]
-        name = "Knowledge"
-        identifier = "knowledge"
-        url = "/knowledge/"
-        weight = 50
 
 
 [languages]
@@ -50,6 +26,37 @@ theme = "Mainroad"
       contact = "Contact"
       disclaimer = "Advertising policy"
 
+      [languages.en.menu]
+
+        [[languages.en.menu.main]]
+        name = "Gaming PC"
+        identifier = "gaming-pc"
+        url = "/gaming-pc/"
+        weight = 20 
+
+
+        [[languages.en.menu.main]]
+        name = "Components"
+        identifier = "components"
+        url = "/components/"
+        weight = 30
+
+        [[languages.en.menu.main]]
+        name = "Peripherals"
+        identifier = "peripherals"
+        url = "/peripherals/"
+        weight = 40
+
+        [[languages.en.menu.main]]
+        name = "Knowledge"
+        identifier = "knowledge"
+        url = "/knowledge/"
+        weight = 50
+
+
+
+
+
   [languages.nl-BE]
     languageCode = "nl-BE"
     languageName = "Nederlands (België)"
@@ -57,6 +64,7 @@ theme = "Mainroad"
     weight = 20
     baseURL = "https://www.2pwngear.be/nl"
     contentDir = "content/nl-BE"
+    
     [languages.nl-BE.params]
       linkedin = "https://linkedin.com/fr/whoever"
       help = "Help"
@@ -66,6 +74,35 @@ theme = "Mainroad"
       privacy = "Privacy"
       contact = "Contact"
       disclaimer = "Disclaimer"
+
+   [languages.nl-BE.menu]
+
+        [[languages.nl-BE.menu.main]]
+        name = "Gaming PC"
+        identifier = "gaming-pc"
+        url = "/gaming-pc/"
+        weight = 20 
+
+
+        [[languages.nl-BE.menu.main]]
+        name = "Componenten"
+        identifier = "componenten"
+        url = "/componenten/"
+        weight = 30
+
+        [[languages.nl-BE.menu.main]]
+        name = "Accessoires"
+        identifier = "accessoires"
+        url = "/accessoires/"
+        weight = 40
+
+        [[languages.nl-BE.menu.main]]
+        name = "Kennis"
+        identifier = "kennis"
+        url = "/kennis/"
+        weight = 50
+
+
 
   [languages.fr-BE]
     languageCode = "fr-BE"
@@ -103,3 +140,30 @@ theme = "Mainroad"
       privacy = "Privacy"
       contact = "Contact"
       disclaimer = "Disclaimer"
+
+    [languages.nl-NL.menu]
+
+        [[languages.nl-NL.menu.main]]
+        name = "Gaming PC"
+        identifier = "gaming-pc"
+        url = "/gaming-pc/"
+        weight = 20 
+
+
+        [[languages.nl-NL.menu.main]]
+        name = "Componenten"
+        identifier = "componenten"
+        url = "/componenten/"
+        weight = 30
+
+        [[languages.nl-NL.menu.main]]
+        name = "Accessoires"
+        identifier = "accessoires"
+        url = "/accessoires/"
+        weight = 40
+
+        [[languages.nl-NL.menu.main]]
+        name = "Kennis"
+        identifier = "kennis"
+        url = "/kennis/"
+        weight = 50

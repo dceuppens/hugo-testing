@@ -12,11 +12,12 @@ Mainimage = "best-gaming-pc-build-under-300"
 Altmainimage ="Dit is een alt"
 Captionmainimage = "Dit is een caption"
 
+translationkey = "best-gaming-pc-600"
 [menu]
 [menu.main]
 		name = "$600 Gaming PC"	
 		parent = "budget-builds"
-		weight = 40
+		weight = 50
 
 +++
 

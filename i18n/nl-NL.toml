@@ -3,3 +3,6 @@ other = "in"
 
 [search]
 other = "Zoeken"
+
+[translations]
+other = "Andere talen"

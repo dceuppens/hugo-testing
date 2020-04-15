@@ -24,6 +24,23 @@
 	}	
 }
 
+
+.c-footer-lang__list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@media all and (min-width: $bp-small) {
+		flex-direction: row;
+		justify-content: center;
+
+	}	
+}
+
+
+
+
 /**
  * Footer Nav List Item
  */
@@ -32,6 +49,20 @@
 	
 	@media all and (min-width: $bp-small) {
 		width: inherit;
+	}
+}
+
+
+.c-footer-lang__item {
+	width: 100%;
+	display: block;	
+	text-align:center;
+	padding: $pad-quarter 0;
+	font-size: $font-size-small;
+	@media all and (min-width: $bp-small) {
+		width: inherit;
+		padding: $pad-quarter $pad-quarter;
+
 	}
 }
 
@@ -53,3 +84,19 @@
 
 	}
 }
+
+.c-footer-lang__link {
+	font-weight: bold;
+	display: block;
+	
+	color: $color-gray-05;
+	text-align:center;
+	
+	&:hover, &:focus {
+		color: $color-white;
+	}
+}
+
+
+
+

@@ -13,8 +13,10 @@
     
       </ul><!--end c-footer-nav__list-->
     
+
     </nav><!--end c-footer-nav-->  
-     <p class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Params.DisplayURL }} . All rights reserved. </a></p>
+    {{ partial "i18nlist.html" . }}
+     <p class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Params.DisplayURL }} . All rights reserved. </p>
     <p class="c-footer__info">{{ .Site.Params.DisplayURL }} {{ .Site.Params.ownedby }} <strong><a href="https://www.track-media.net">TrackMedia GCV</a></strong> , Grotesteenweg 473, 2018 Antwerp, Belgium (VAT: BE 0679.938.623)</p>
     
    <!--</div>  --><!-- end l -->
