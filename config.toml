@@ -1,23 +1,28 @@
-DefaultContentLanguage = "en"
+
+
 copyright = "TrackMedia GCV - BE 0679.938.623"
 
+DefaultContentLanguage = "en-us"
 
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
 
-theme = "Mainroad"
-
-
-
+# Default JPEG quality setting. Default is 75.
+quality = 100  
 
 
 [languages]
-  [languages.en]
-  	languageCode = "en"
+  [languages.en-us]
+  	languageCode = "en-US"
   	languageName = "English (USA)"
     title = "2PWNGear - experts in Gaming PCs"
     weight = 10
-    contentDir = "content/en"
+    contentDir = "content/en-US"
     baseURL = "https://www.2pwngear.com"
-      [languages.en.params]
+      [languages.en-us.params]
       linkedin = "https://linkedin.com/whoever"
       displayURL = "2PWNGear.com"
       ownedby = "is a property of"
@@ -25,29 +30,31 @@ theme = "Mainroad"
       privacy = "Privacy"
       contact = "Contact"
       disclaimer = "Advertising policy"
+      googletag = "GTM-MB6RTB8"
+      googlecse = "011886628888695977368:zy1zx_cceuo"
+      productfile = "/static/products-us-en.csv"
+      [languages.en-us.menu]
 
-      [languages.en.menu]
-
-        [[languages.en.menu.main]]
+        [[languages.en-us.menu.main]]
         name = "Gaming PC"
         identifier = "gaming-pc"
         url = "/gaming-pc/"
         weight = 20 
 
 
-        [[languages.en.menu.main]]
+        [[languages.en-us.menu.main]]
         name = "Components"
         identifier = "components"
         url = "/components/"
         weight = 30
 
-        [[languages.en.menu.main]]
+        [[languages.en-us.menu.main]]
         name = "Peripherals"
         identifier = "peripherals"
         url = "/peripherals/"
         weight = 40
 
-        [[languages.en.menu.main]]
+        [[languages.en-us.menu.main]]
         name = "Knowledge"
         identifier = "knowledge"
         url = "/knowledge/"
@@ -55,17 +62,15 @@ theme = "Mainroad"
 
 
 
-
-
-  [languages.nl-BE]
+  [languages.nl-be]
     languageCode = "nl-BE"
     languageName = "Nederlands (België)"
     title = "2PWNGear - dé specialist in gaming PC's"
     weight = 20
     baseURL = "https://www.2pwngear.be/nl"
     contentDir = "content/nl-BE"
-    
-    [languages.nl-BE.params]
+
+    [languages.nl-be.params]
       linkedin = "https://linkedin.com/fr/whoever"
       help = "Help"
       displayURL = "2PWNGear.be"
@@ -74,29 +79,31 @@ theme = "Mainroad"
       privacy = "Privacy"
       contact = "Contact"
       disclaimer = "Disclaimer"
+      googlecse = "011886628888695977368:88akodr5yrf"
+      productfile = "/static/products-be-nl.csv"
 
-   [languages.nl-BE.menu]
+   [languages.nl-be.menu]
 
-        [[languages.nl-BE.menu.main]]
+        [[languages.nl-be.menu.main]]
         name = "Gaming PC"
         identifier = "gaming-pc"
         url = "/gaming-pc/"
         weight = 20 
 
 
-        [[languages.nl-BE.menu.main]]
+        [[languages.nl-be.menu.main]]
         name = "Componenten"
         identifier = "componenten"
         url = "/componenten/"
         weight = 30
 
-        [[languages.nl-BE.menu.main]]
+        [[languages.nl-be.menu.main]]
         name = "Accessoires"
         identifier = "accessoires"
         url = "/accessoires/"
         weight = 40
 
-        [[languages.nl-BE.menu.main]]
+        [[languages.nl-be.menu.main]]
         name = "Kennis"
         identifier = "kennis"
         url = "/kennis/"
@@ -121,6 +128,7 @@ theme = "Mainroad"
       privacy = "Vie privrée"
       disclaimer = "Disclaimer"
       contact = "Contact"
+      googlecse = "011886628888695977368:huy94vcvacx"
 
 
   [languages.nl-NL]
@@ -140,6 +148,7 @@ theme = "Mainroad"
       privacy = "Privacy"
       contact = "Contact"
       disclaimer = "Disclaimer"
+      googlecse = "011886628888695977368:1xvywqmkhq8"
 
     [languages.nl-NL.menu]
 
@@ -167,3 +176,6 @@ theme = "Mainroad"
         identifier = "kennis"
         url = "/kennis/"
         weight = 50
+
+
+theme = "Mainroad"

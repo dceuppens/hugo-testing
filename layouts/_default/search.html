@@ -1,0 +1,16 @@
+{{ define "maincontent" }}
+
+
+<div class="ct-section">
+	<h2>{{ i18n "searchresults" }}</h2>
+	<div class ="search-results">
+		{{ if .Site.Params.Googlecse }}
+		{{ $src :=  printf "%s%s" "https://cse.google.com/cse.js?cx=" .Site.Params.Googlecse  }}
+		<script async src="{{ $src}}"></script>
+		{{ end }}
+	<div class="gcse-searchresults-only"></div>
+	</div>
+</div>
+
+
+{{ end }}

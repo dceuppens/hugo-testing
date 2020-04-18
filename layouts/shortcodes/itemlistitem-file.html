@@ -1,0 +1,40 @@
+
+{{ $EAN := .Get 4 }}
+{{ $url := .Site.Params.productfile }}
+{{ $sep := ";" }}
+{{ range $i, $r := getCSV $sep $url }}
+	{{ $eancheck :=  index $r 0 }}
+    	{{if eq $EAN $eancheck }}
+        	{{ $.Scratch.Set "producturl"  (index $r 3) }}
+          	{{ $.Scratch.Set "pricevalue" (index $r 1) }}
+          	{{ $.Scratch.Set "pricecurrency" (index $r 2) }}
+         {{ end }}
+{{ end }}	
+
+{{ $producturl := .Scratch.Get "producturl" }}
+{{ $pricevalue := .Scratch.Get "pricevalue" }}
+{{ $pricecurrency := .Scratch.Get "pricecurrency" }}
+<li class="lc-listitem type-normal--item">
+	<a href="{{ $producturl }}" class="c-product-media">
+		<div class="c-product-media__media">
+
+			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" (.Get 0) ) }} 
+			{{ .Scratch.Set "image" ($original.Resize  "67x") }}
+			{{ $image := .Scratch.Get "image" }}
+			<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{.Get 2}}" class="product-media__img" loading="lazy"/>
+		</div>
+		<div class="c-product-media__body">
+			<span class="c-product-media-label">{{.Get 1}}</span>
+			<h3 class="c-product-media__headline">{{.Get 2}}</h3>
+			<p class="c-product-media__excerpt">{{.Get 3}}</p>
+		</div>
+		<div class="c-product-media__price">
+			{{ if and $pricecurrency $pricevalue }}
+			<p class="c-product-media__pricevalue">{{ $pricecurrency }} {{ $pricevalue }} </p>
+			{{ end }}			
+		</div>
+		<div class="c-product-media__button">
+			<span class="media-button">view</span>
+		</div>
+	</a>
+</li>

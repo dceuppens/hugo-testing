@@ -6,3 +6,13 @@ other = "Zoeken"
 
 [translations]
 other = "Andere talen"
+
+[searchresults]
+other = "Resultaten"
+
+[source]
+other = "bron"
+
+
+[copyright]
+other = "copyright: "

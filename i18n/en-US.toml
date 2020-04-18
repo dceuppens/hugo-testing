@@ -1,0 +1,17 @@
+[in]
+other = "in"
+
+[search]
+other = "Search the site"
+
+[translations]
+other = "Change language"
+
+[searchresults]
+other = "Search results"
+
+[source]
+other = "source"
+
+[copyright]
+other = "Courtesy of"

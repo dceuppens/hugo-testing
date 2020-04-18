@@ -1,12 +1,16 @@
 		<header class="c-header">
 			<div class="c-header__controls promote-layer">
-				<a href="/" class="c-logo-link">
+				
 				{{ if eq .Site.Language.LanguageName "Nederlands (België)" }}
+				<a href="/nl" class="c-logo-link">
 				<img src="/nl/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
 				{{ else if eq .Site.Language.LanguageName "Français (Belgique)" }}
+				<a href="/fr" class="c-logo-link">
 				<img src="/fr/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
 				{{ else}}
+				<a href="/" class="c-logo-link">
 				<img src="/images/logo.svg" class="c-logo c-logo-link__img" alt="Home" />
+				
 				{{ end }}
 				</a><!-- end c-logo -->			
 
@@ -16,7 +20,14 @@
 
 
 		        <div class="c-search-form">
-				    <form method="get" action="../search.html" class="c-search-form__content">
+				    
+		        	{{ if eq .Site.Language.LanguageName "Nederlands (België)" }}
+				    <form method="get" action="/nl/search/" class="c-search-form__content">
+				    {{ else if eq .Site.Language.LanguageName "Français (Belgique)" }}
+				    <form method="get" action="/fr/search/" class="c-search-form__content">
+				    {{ else}}
+				    <form method="get" action="/search/" class="c-search-form__content">
+				    {{ end }}
 				    	<label for="search" class="c-search-form__label is-vishidden">Search the site</label>
 				    	<input name="q" type="search" id="search" class="c-search-form__input" placeholder={{ i18n "search" }} />
 				    	<button type="submit" class="c-search-form__button "><i class="icon-search"></i></button>

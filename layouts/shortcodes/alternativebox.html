@@ -11,22 +11,27 @@
 	<div class = "c-alternative-product__body c-block-media__media c-block-media  c-block-media--alternative-large">
 		<div class = "c-alternative-product__media c-block-media__media">
 			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" $image ) }} 
-			{{ .Scratch.Set "image-normal" ($original.Resize  "115x") }}
-			{{ .Scratch.Set "image-large" ($original.Resize  "300x") }}
-			{{ $image_normal := .Scratch.Get "image-normal" }}
-			{{ $image_large := .Scratch.Get "image-large" }}
+			{{ if $original}} 
 
-			<img 
-		      alt= "{{ $alt }}"
-		      srcset="
-		          {{$image_large.RelPermalink}} 676w,
-		          {{$image_normal.RelPermalink}} 190w      
-		          "
-		     sizes="
-		        (min-width: 61.25em) 190px,
-		     		676px
-		        "
-		     src="{{$image_large.RelPermalink}}" loading="lazy" >
+				{{ .Scratch.Set "image-normal" ($original.Resize  "115x") }}
+				{{ .Scratch.Set "image-large" ($original.Resize  "300x") }}
+				{{ $image_normal := .Scratch.Get "image-normal" }}
+				{{ $image_large := .Scratch.Get "image-large" }}
+
+				<img 
+			      alt= "{{ $alt }}"
+			      srcset="
+			          {{$image_large.RelPermalink}} 676w,
+			          {{$image_normal.RelPermalink}} 190w      
+			          "
+			     sizes="
+			        (min-width: 61.25em) 190px,
+			     		676px
+			        "
+			     src="{{$image_large.RelPermalink}}" loading="lazy" >
+			{{ else }} 
+				<p>problem</p>
+			{{ end }}	
 		</div>
 		<div class = "c-alternative-product__content c-block-media__body">
 		 	<p class = "c-alternative-product__text">

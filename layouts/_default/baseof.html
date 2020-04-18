@@ -5,18 +5,16 @@
 	<meta http-equiv="Accept-CH" content="DPR, Width, Viewport-Width">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+	{{ partial "google_tag.html" .}}
 	<title>{{ .Title }} | 2PWNGear</title>
-	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	<meta name="description" content="{{.Params.Description }}">
 	{{ hugo.Generator }}
 	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
 	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	{{- range .AlternativeOutputFormats }}
-	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
-	{{- end }}
+	
 	{{ partial "hreflang.html" .}}
 
 	
@@ -57,13 +55,14 @@
 
 	<link rel="stylesheet" href="{{ $style.RelPermalink | relURL }}">
 	
-	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
+	<link rel="shortcut icon" href="{{ "images/favicon.png" | relURL }}">
 	{{ template "_internal/google_analytics_async.html" . }}
 	{{ partial "breadcrumb_json.html" . }}
 
 	
 </head>
 <body class="home">
+	{{ partial "google_tag_body.html" . }}
 	<div class="l">
 		{{ partial "navbar.html" . }}
 
