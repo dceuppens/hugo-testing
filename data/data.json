@@ -1,0 +1,1110 @@
+{
+  "products": [
+    {
+      "name": "AMD Ryzen 3200G Processor",
+      "mpn": "YD3200C5FHBOX",
+      "gtin12": "730143309851",
+      "gtin13": "0730143309851",
+      "brand": "AMD",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07STGHZK8?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "91.97",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1485464-REG/amd_yd3200c5fhbox_ryzen_3_3200g_3_6.html",
+              "pricevalue": "91.97",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/amd-ryzen-3-3200g/p/N82E16819113571?Item=N82E16819113571&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-eyA90EcfXPWbrXXEvSEVSg",
+              "pricevalue": "94.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6356279.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "99.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gigabyte B450M DS3H",
+      "mpn": "B450M DS3H",
+      "gtin12": "889523014196",
+      "gtin13": "4719331803827",
+      "brand": "Gigabyte",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07FWVJSHC?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "72.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1543527-REG/gigabyte_b450m_ds3h_motherboard.html",
+              "pricevalue": "72.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/gigabyte-b450m-ds3h/p/N82E16813145083?Item=N82E16813145083&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-u_vqekhG6zh6CjjTNC1zJg",
+              "pricevalue": "76.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "G.Skill Aegis 8 GB",
+      "mpn": "F4-3000C16S-8GISB",
+      "gtin12": "848354023432",
+      "gtin13": "4719692013439",
+      "brand": "G.Skill",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/g-skill-8gb-288-pin-ddr4-sdram/p/N82E16820232419?Item=N82E16820232419&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-DLDiVUCNvT_XPFSF.CU_ag",
+              "pricevalue": "34.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B01IW7Z9GM?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "42.28",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ultimate SU635",
+      "mpn": "ASU635SS-240GQ-R",
+      "gtin12": "4713218469946",
+      "gtin13": "4713218461162",
+      "brand": "ADATA",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07PLNNDL2?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "31.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Smart 500 W",
+      "mpn": "PS-SPD-0430NPCWUS-W",
+      "gtin12": "841163002285",
+      "gtin13": "4716872052684",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/thermaltake-smart-series-ps-spd-0430npcwus-w-430w/p/N82E16817153368?Item=N82E16817153368&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-2JTONMF92cWAzXP9SlvoEg",
+              "pricevalue": "50.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07BFJ91TY?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "67.85",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Versa H17",
+      "mpn": "CA-1J1-00S1NN-00",
+      "gtin12": "841163001059",
+      "gtin13": "4711246871052",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6353123.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "44.99",
+              "priceCurrencySign": "$",
+              "availability": ""
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/black-thermaltake-versa-h17-micro-gaming-chassis/p/N82E16811133364?Item=N82E16811133364&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-Bhn5NpNNXcnnmhk.XxndKw",
+              "pricevalue": "52.98",
+              "priceCurrencySign": "$",
+              "availability": ""
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B0797GHT9F?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "62.17",
+              "priceCurrencySign": "$",
+              "availability": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MSI Radeon RX 570 8 GB ARMOR\u00a0",
+      "mpn": "RX 570 ARMOR 8G OC",
+      "gtin12": "824142154816",
+      "gtin13": "4719072548438",
+      "brand": "MSI",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/msi-radeon-rx-570-rx-570-armor-8g-oc/p/N82E16814137256?Item=N82E16814137256&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-7ohEq4Cyej6PjlZ5keiziQ",
+              "pricevalue": "144.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B076Y93L8F?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "159.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AMD Ryzen 5 3600 3.6 GHz",
+      "mpn": "100-100000031BOX",
+      "gtin12": "730143309936",
+      "gtin13": "0730143309936",
+      "brand": "AMD",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07STGGQ18?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "172.39",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/amd-ryzen-5-3600/p/N82E16819113569?Item=N82E16819113569&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-rwHbB_hgUDqQYCmxsARZwg",
+              "pricevalue": "172.39",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1485462-REG/amd_100_100000031box_ryzen_5_3600_3_6.html",
+              "pricevalue": "174.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6356278.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "199.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Asus VE228H",
+      "mpn": "90LMB4101Q01041C",
+      "gtin12": "610839326068",
+      "gtin13": "0610839326068",
+      "brand": "ASUS",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/asus-ve228h-22/p/N82E16824236100?Item=N82E16824236100&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-ElXYyVer9YCszZBBQAPOmA",
+              "pricevalue": "104.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B00413PHDM?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "112.94",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/747875-REG/ASUS_VE228H_VE228H_21_5_LED_Backlit.html",
+              "pricevalue": "114.97",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Monoprice",
+              "producturl": "https://www.monoprice.com/product?p_id=17112&AID=13242841&PID=3938566&ref=cj&utm_source=cj&utm_medium=13242841&utm_term=PCPartPicker%2C+LLC-2993279&cjevent=e65858e8945911ea82f603630a18050e",
+              "pricevalue": "114.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/ASVE228H.html?sterm=&kbid=912925",
+              "pricevalue": "118.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Challenger Prime",
+      "mpn": "KB-CHM-MBBLUS-01",
+      "gtin12": "841163057476",
+      "gtin13": "4717964397669",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B00NNQG0N4?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "29.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Thermaltake-CHALLENGER-Prime/47065471?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "35.97",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Logitech G203 Prodigy",
+      "mpn": "910-004842",
+      "gtin12": "097855123152",
+      "gtin13": "0097855123152",
+      "brand": "Logitech",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B01M26YUKO?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "30.03",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/logitech-910-004842-g203-prodigy-usb-wired/p/N82E16826197252?Item=N82E16826197252&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-Gw_HXhezlC88R0YiHbGdHg",
+              "pricevalue": "32.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/LOGG203.html?sterm=&kbid=912925",
+              "pricevalue": "39.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1418026-REG/logitech_910_004842_g203_prodigy_gaming_mouse.html",
+              "pricevalue": "39.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Target",
+              "producturl": "https://www.target.com/p/logitech-g203-gaming-mouse-black-910-004842/-/A-52135873?clkid=&lnm=201333&afid=&ref=tgt_adv_xasd0002",
+              "pricevalue": "41.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Monoprice",
+              "producturl": "https://www.monoprice.com/product?p_id=32295&AID=13242841&PID=3938566&ref=cj&utm_source=cj&utm_medium=13242841&utm_term=PCPartPicker%2C+LLC-2993279&cjevent=f3ac1fdc945911ea8057037a0a180510",
+              "pricevalue": "54.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HyperX Cloud Stinger",
+      "mpn": "",
+      "gtin12": "740617255485",
+      "gtin13": "0740617295467",
+      "brand": "Kingston",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B01L2ZRYVE?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/5590001.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Target",
+              "producturl": "https://www.target.com/p/hyperx-cloud-stinger-gaming-headset-for-pc-xbox-one-ps4-wii-u-nintendo-switch/-/A-52030568?clkid=&lnm=201333&afid=&ref=tgt_adv_xasd0002",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Dell",
+              "producturl": "https://www.dell.com/en-us/shop/hyperx-cloud-stinger-headset-full-size-wired-35-mm-jack-black/apd/a9251255?AID=3938566&cjevent=f85110f3945911ea81a5038c0a180511&gacd=9694607-23736398-5750457-266319267-127795103&dgc=af&VEN1=12578053-3938566-&dclid=CLbJt-q_rukCFZZK4Aod7iYHxg",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Dell Technologies",
+              "producturl": "https://www.dell.com/en-us/shop/hyperx-cloud-stinger-headset-full-size-wired-35-mm-jack-black/apd/a9251255?cjevent=f9f39626945911ea82f603630a18050e&gacd=9646510-23736410-5750457-266322766-127797014&dgc=af&VEN1=12383016-3938566-&dclid=COGK3eu_rukCFY3vdwodYDkPNw",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/black-hyperx-cloud-stinger/p/N82E16826738012?Item=N82E16826738012&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-H6RlNccG1y6OZZUTyK7fxQ",
+              "pricevalue": "56.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/HXHSCSBKNA.html?sterm=&kbid=912925",
+              "pricevalue": "66.94",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sandisk SSD Plus 480GB",
+      "mpn": "SDSSDA-480G-G26",
+      "gtin12": "619659146757",
+      "gtin13": "0619659146757",
+      "brand": "Western Digital",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/IDSDSSA48G26.html?sterm=&kbid=912925",
+              "pricevalue": "59.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B01F9G46Q8?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "59.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1264783-REG/sandisk_sdssda_480g_g26_480gb_plus_sata_iii.html",
+              "pricevalue": "59.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/sandisk-ssd-plus-480gb/p/N82E16820173152?Item=N82E16820173152&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-FI4vFY2rIm6QEpSBMl74eQ",
+              "pricevalue": "59.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/5394700.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "64.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Sandisk-480GB-SDSSDA-480G-G26-SMI-1ZX3-SSD-GLOBAL/54277070?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "84.82",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Corsair Vengeange LPX",
+      "mpn": "CMK16GX4M2B3200C16",
+      "gtin12": "843591070454",
+      "gtin13": "4053162965775",
+      "brand": "Corsair",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B0143UM4TC?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "79.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/4895506.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/corsair-16gb-288-pin-ddr4-sdram/p/N82E16820233859?Item=N82E16820233859&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-j7n8uWetUZAk9uepPVRrGA",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Corsair",
+              "producturl": "https://www.corsair.com/us/en/Categories/Products/Memory/VENGEANCE-LPX/p/CMK16GX4M2B3200C16?utm_source=_79301&utm_medium=Affiliate&utm_campaign=497986_CORSAIR%20US%20Product%20Catalog%20Ad&utm_content=Content&clickid=&irgwc=1",
+              "pricevalue": "85.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Corsair-CMK16GX4M2B3200C16-Vengeance-LPX-16GB-2x8GB-DDR4-DRAM-3200MHz-C16-Memory-Kit-Black/47739389?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "89.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1193980-REG/corsair_cmk16gx4m2b3200c16_vengeance_16gb_2_x.html",
+              "pricevalue": "99.00",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MSI B450M PRO-VDH MAX",
+      "mpn": "7A38-043R",
+      "gtin12": "824142194430",
+      "gtin13": "4719072665968",
+      "brand": "MSI",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07XH629TV?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "79.98",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/msi-b450m-pro-vdh-max/p/N82E16813144265?Item=N82E16813144265&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-H8g25Rnd52CntpPd5B6Bsw",
+              "pricevalue": "83.98",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake V200 Tempered Glass RGB Edition",
+      "mpn": "CA-1K8-00M1WN-01",
+      "gtin12": "841163005354",
+      "gtin13": "4711246874398",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07FL1D5RV?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "78.40",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6353120.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/black-thermaltake-v200-tg-rgb-edition-atx-mid-tower-chassis/p/N82E16811133390?Item=N82E16811133390&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-qYC13yZjX68TvkpdIsHZnQ",
+              "pricevalue": "83.98",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Patriot Viper Steel 8 GB",
+      "mpn": "PVS48G320C6",
+      "gtin12": "814914025505",
+      "gtin13": "0814914025505",
+      "brand": "Patriot",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07N3XZ97B?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "36.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/patriot-8gb-288-pin-ddr4-sdram/p/N82E16820225152?Item=N82E16820225152&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-9_j8lztL5sUD2Qf3FkC9ug",
+              "pricevalue": "36.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crucial MX500 500 GB",
+      "mpn": "CT500MX500SSD1",
+      "gtin12": "649528785053",
+      "gtin13": "0649528785053",
+      "brand": "Crucial",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B0786QNS9B?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "69.95",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/CTMX500500SD.html?sterm=&kbid=912925",
+              "pricevalue": "69.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1378549-REG/crucial_ct500mx500ssd1_mx500_500gb_2_5_ssd.html",
+              "pricevalue": "69.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/crucial-mx500-500gb/p/N82E16820156173?Item=N82E16820156173&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-pW6eQTzSdx5Vu6IM9M3Y4A",
+              "pricevalue": "69.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Dell",
+              "producturl": "https://www.dell.com/en-us/shop/crucial-mx500-solid-state-drive-500-gb-sata-6gb-s/apd/aa178562/storage-drives-media?AID=3938566&cjevent=17c367e4945a11ea83d8036f0a18050f&gacd=9694607-23736398-5750457-266319267-127795103&dgc=af&VEN1=12578053-3938566-&dclid=CKrVxoPArukCFUk84Aod3mwCNA",
+              "pricevalue": "80.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Dell Technologies",
+              "producturl": "https://www.dell.com/en-us/shop/crucial-mx500-solid-state-drive-500-gb-sata-6gb-s/apd/aa178562/storage-drives-media?cjevent=195a1c73945a11ea8040037a0a180514&gacd=9646510-23736410-5750457-266322766-127797014&dgc=af&VEN1=12383016-3938566-&dclid=CMbL5ITArukCFQU14AodBPMO_A",
+              "pricevalue": "80.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Crucial-CT500MX500SSD1-MX500-500GB-SATA-2-5-inch-7mm-with-9-5mm-adapter-Internal-SSD/930000806?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "89.00",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Smart 600 W 80",
+      "mpn": "PS-SPD-0600NPCWUS-W",
+      "gtin12": "841163062241",
+      "gtin13": "0841163062241",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/thermaltake-smart-series-ps-spd-0600npcwus-w-600w/p/N82E16817153232?Item=N82E16817153232&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-cLKs1LapIuWy0ke9YxfiSA",
+              "pricevalue": "55.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Thermaltake-Smart-600W-80-White-Power-Supply/47861435?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "57.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1193910-REG/thermaltake_ps_spd_0600npcwus_w_smart_active_pfc_80_plus.html",
+              "pricevalue": "65.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B014W3EMAO?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "73.65",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "XFX Radeon RX 5700",
+      "mpn": "RX-57XL8LBD6",
+      "gtin12": "778656078048",
+      "gtin13": "0778656078048",
+      "brand": "XFX",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6389373.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "329.99",
+              "priceCurrencySign": "$",
+              "availability": ""
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07XVMXBQW?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "485.00",
+              "priceCurrencySign": "$",
+              "availability": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "XFX Radeon RX 570 8GB",
+      "mpn": "RX-570P8DFD6",
+      "gtin12": "778656076129",
+      "gtin13": "0778656076129",
+      "brand": "XFX",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B077VX31FZ?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "139.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1466954-REG/xfx_force_rx_570p8dfd6_xfx_radeon_rx_570.html",
+              "pricevalue": "147.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6211400.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "159.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Corsair K55 RGB Wired Keyboard",
+      "mpn": "CH-9206015-NA",
+      "gtin12": "0843591089135",
+      "gtin13": "0843591089135",
+      "brand": "Corsair",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B01M4LIKLI?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "49.88",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Corsair-Gaming-K55-RGB-Keyboard-Backlit-RGB-LED/878730356?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "49.88",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/5707081.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Corsair",
+              "producturl": "https://www.corsair.com/us/en/Categories/Products/Gaming-Keyboards/Standard-Gaming-Keyboards/K55-RGB-Gaming-Keyboard/p/CH-9206015-NA?utm_source=_79301&utm_medium=Affiliate&utm_campaign=497986_CORSAIR%20US%20Product%20Catalog%20Ad&utm_content=Content&clickid=&irgwc=1",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/black-corsair-k55-rgb-non-mechanical/p/N82E16823816083?Item=N82E16823816083&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-oJhujJNGxGUx9oQx78Mr8Q",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/CSCH926015NA.html?sterm=&kbid=912925",
+              "pricevalue": "59.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Logitech G502 HERO",
+      "mpn": "910-005469",
+      "gtin12": "097855141996",
+      "gtin13": "5099206085879",
+      "brand": "Logitech",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/logitech-910-005469-g502-hero-usb-wired/p/3C6-0064-00002?Item=3C6-0064-00002&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-DoMXphGbrHCSoEUEOIMJfA",
+              "pricevalue": "46.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Target",
+              "producturl": "https://www.target.com/p/logitech-g502-hero-gaming-mouse/-/A-76580928?clkid=&lnm=201333&afid=&ref=tgt_adv_xasd0002",
+              "pricevalue": "46.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Logitech-G502-Hero-High-Performance-Gaming-Mouse/901832480?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "46.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6265133.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07GBZ4Q68?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "74.90",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Adorama",
+              "producturl": "https://www.adorama.com/LOGG502.html?sterm=&kbid=912925",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "B&H",
+              "producturl": "https://www.bhphotovideo.com/c/product/1442781-REG/logitech_910005469_g502_hero_gaming_mouse.html",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Dell",
+              "producturl": "https://www.dell.com/en-us/shop/logitech-gaming-mouse-g502-hero-mouse-optical-11-buttons-wired-usb/apd/aa324362/pc-accessories?AID=3938566&cjevent=313f1554945a11ea81b803570a18050d&gacd=9694607-23736398-5750457-266319267-127795103&dgc=af&VEN1=12578053-3938566-&dclid=CM2X9JfArukCFZSr3godO8oNUA",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Dell Technologies",
+              "producturl": "https://www.dell.com/en-us/shop/logitech-gaming-mouse-g502-hero-mouse-optical-11-buttons-wired-usb/apd/aa324362/pc-accessories?cjevent=329cff15945a11ea8057037a0a180510&gacd=9646510-23736410-5750457-266322766-127797014&dgc=af&VEN1=12383016-3938566-&dclid=CO3Kh5nArukCFQ6FewodjeYIMQ",
+              "pricevalue": "79.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Monoprice",
+              "producturl": "https://www.monoprice.com/product?p_id=37630&AID=13242841&PID=3938566&ref=cj&utm_source=cj&utm_medium=13242841&utm_term=PCPartPicker%2C+LLC-2993279&cjevent=338152bc945a11ea83d8036f0a18050f",
+              "pricevalue": "99.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Versa H21",
+      "mpn": "CA-1B2-00M1NN-00",
+      "gtin12": "841163054246",
+      "gtin13": "4717964394439",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Thermaltake-Versa-H21-Mid-Tower-ATX-Gaming-Desktop-Chassis-CA-1B2-00M1NN-00/39258038?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "44.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/black-thermaltake-versa-h21-atx-mid-tower/p/N82E16811133247?Item=N82E16811133247&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-IR3_oJKIUmoLHmx5z4nFXA",
+              "pricevalue": "53.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B00J0NZ3Q4?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "56.16",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "XFX Radeon RX 570 4 GB",
+      "mpn": "RX-570P427D6",
+      "gtin12": "778656075382",
+      "gtin13": "0778656075382",
+      "brand": "XFX",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B06ZXY43VC?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "129.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Best Buy",
+              "producturl": "http://www.bestbuy.com/site/-/6382713.p?ref=198&acampID=633495&cmp=RMX",
+              "pricevalue": "129.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thermaltake Smart 500 W 80",
+      "mpn": "PS-SPD-0500NPCWUS-W",
+      "gtin12": "841163062234",
+      "gtin13": "0841163062234",
+      "brand": "Thermaltake",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B014W3EM2W?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/Thermaltake-Smart-500W-80-White-Power-Supply/47861451?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "49.99",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            },
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/thermaltake-smart-500w-ps-spd-0500npcwus-w/p/N82E16817153233?Item=N82E16817153233&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-o1hi7MidP5VTH_0lxquEIg",
+              "pricevalue": "55.98",
+              "priceCurrencySign": "$",
+              "availability": "Out of stock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "",
+      "mpn": "YD2600BBAFBOX",
+      "gtin12": "730143309165",
+      "gtin13": "0730143309165",
+      "brand": "",
+      "country": [
+        {
+          "code": "us",
+          "offers": [
+            {
+              "supplier": "Newegg",
+              "producturl": "https://www.newegg.com/amd-ryzen-5-2600/p/N82E16819113496?Item=N82E16819113496&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-jwXPRnYfIKeCnawOQbQEDw",
+              "pricevalue": "135.98",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Amazon",
+              "producturl": "https://www.amazon.com/dp/B07B41WS48?tag=pcpapi-20&linkCode=ogi&th=1&psc=1",
+              "pricevalue": "149.00",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Monoprice",
+              "producturl": "https://www.monoprice.com/product?p_id=36445&AID=13242841&PID=3938566&ref=cj&utm_source=cj&utm_medium=13242841&utm_term=PCPartPicker%2C+LLC-2993279&cjevent=403f00e7945a11ea803c03460a18050c",
+              "pricevalue": "159.99",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            },
+            {
+              "supplier": "Walmart",
+              "producturl": "https://www.walmart.com/ip/AMD-CPU-Ryzen-5-2600-With-Wraith-Stealth-Cooler-YD2600BBAFBOX/312473574?irgwc=1&sourceid=imp_&veh=aff&wmlspartner=imp_79301&clickid=&sharedid=",
+              "pricevalue": "185.00",
+              "priceCurrencySign": "$",
+              "availability": "In stock"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

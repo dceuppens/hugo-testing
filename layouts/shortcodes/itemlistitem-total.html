@@ -1,0 +1,19 @@
+<li class="lc-listitem type-normal--item">
+	<div  class="c-product-media">
+		<div class="c-product-media__media">
+		</div>
+		<div class="c-product-media__body">
+			<span class="c-product-media-label blank"></span>
+			<h3 class="c-product-media__headline">{{ i18n "total_price" }}</h3>
+			<p class="c-product-media__excerpt"></p>
+		</div>
+		<div class="c-product-media__price">
+			
+			<p class="c-product-media__pricevalue"> {{ $.Page.Scratch.Get "totalcurrency" }} {{ div (math.Round (mul ($.Page.Scratch.Get "total") 100)) 100}} </p>
+			
+		</div>
+		<div class="c-product-media__button ">
+			<span class="media-button blank">view</span>
+		</div>
+	</div>
+</li>

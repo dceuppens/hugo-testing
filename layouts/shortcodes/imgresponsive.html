@@ -2,12 +2,12 @@
 {{ if $original }}
 
   {{ $alt := .Get 1 }}
-  {{ .Scratch.Set "image_large" ($original.Resize "712x jpg") }}
+  {{ .Scratch.Set "image_large" ($original.Resize "498x jpg") }}
 
-  {{ .Scratch.Set "image_medium" ($original.Resize "568x jpg") }}
-  {{ .Scratch.Set "image_small" ($original.Resize "458x jpg") }}
+  {{ .Scratch.Set "image_medium" ($original.Resize "398x jpg") }}
+  {{ .Scratch.Set "image_small" ($original.Resize "321x jpg") }}
 
-  {{ .Scratch.Set "image_mobile" ($original.Resize "676x jpg") }}
+  {{ .Scratch.Set "image_mobile" ($original.Resize "473x jpg") }}
   {{ $image_large := .Scratch.Get "image_large" }}
   {{ $image_medium := .Scratch.Get "image_medium" }}
   {{ $image_small := .Scratch.Get "image_small" }}
@@ -21,19 +21,19 @@
          "{{ $alt }}"
         {{ end }} 
         srcset="
-            {{$image_large.RelPermalink}} 712w,
-            {{$image_mobile.RelPermalink}} 676w,
-            {{$image_medium.RelPermalink}} 568w,
-            {{$image_small.RelPermalink}} 458w
+            {{$image_large.RelPermalink}} 498w,
+            {{$image_mobile.RelPermalink}} 473w,
+            {{$image_medium.RelPermalink}} 398w,
+            {{$image_small.RelPermalink}} 321w
            
             "
        sizes="
-          (min-width: 81.25em) 712px,
-       		(min-width: 71.25em) 568px,
-       		(min-width: 61.25em) 458px,
-       		676px
+          (min-width: 81.25em) 498px,
+       		(min-width: 71.25em) 398px,
+       		(min-width: 61.25em) 321px,
+       		473px
           "
-       src="{{$image_large.RelPermalink}}"  loading="lazy">
+       src="{{$image_large.RelPermalink}}"  class="content-body-image" loading="lazy">
 {{ else }}
   <p>problem</p>
 {{ end }}

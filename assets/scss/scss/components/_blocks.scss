@@ -302,7 +302,8 @@ Dit anders organiseren - per size & niet per type
     border-width: medium;
     border-color: $color-utility-positive;
     border-radius: 3px;
-    padding: 4px;
+    padding: $pad-quarter;
+    margin: $pad-half 0;
 
     > a {
         color: $color-text;
@@ -368,8 +369,9 @@ Dit anders organiseren - per size & niet per type
 
     @media all and (min-width: $bp-large) {
         .c-block-media--alternative-large > & {
-            flex: 0 0 10em;
+            flex: 0 0 15em;
             padding-top: $pad-quarter;
+            padding-right: $pad-half;
             margin: 0;
         }
     }

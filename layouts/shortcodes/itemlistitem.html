@@ -2,7 +2,7 @@
 	<a href="{{ printf "%s" (.Get 0) }}" class="c-product-media">
 		<div class="c-product-media__media">
 
-			{{ $original := .Page.Resources.GetMatch ( printf "*%s*" (.Get 1) ) }} 
+			{{ $original := .Page.Resources.GetMatch ( printf "%s" (.Get 1) ) }} 
 			{{ if $original }} 
 
 				{{ .Scratch.Set "image" ($original.Resize  "67x") }}

@@ -14,4 +14,7 @@ other = "Search results"
 other = "source"
 
 [copyright]
-other = "Courtesy of"
+other = "Image courtesy of"
+
+[total_price]
+other = "Total : "

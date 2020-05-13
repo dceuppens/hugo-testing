@@ -92,6 +92,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	 &.blank {
+		background-color: $color-white;
+		}
 
 	@media all and (min-width: $bp-med) {
 		//padding: 0;

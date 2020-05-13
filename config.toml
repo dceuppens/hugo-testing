@@ -11,12 +11,19 @@ DefaultContentLanguage = "en-us"
 resampleFilter = "box"
 
 # Default JPEG quality setting. Default is 75.
-quality = 100  
+quality = 100
+
+[build]
+  writeStats = true
+
+
+
 
 
 [languages]
   [languages.en-us]
   	languageCode = "en-US"
+    countryCode = "US"
   	languageName = "English (USA)"
     title = "2PWNGear - experts in Gaming PCs"
     weight = 10
@@ -63,6 +70,7 @@ quality = 100
 
 
   [languages.nl-be]
+    countryCode = "BE"
     languageCode = "nl-BE"
     languageName = "Nederlands (België)"
     title = "2PWNGear - dé specialist in gaming PC's"
@@ -112,9 +120,10 @@ quality = 100
 
 
   [languages.fr-BE]
+    countryCode = "BE"
     languageCode = "fr-BE"
     languageName = "Français (Belgique)"
-    contentDir = "content/nl-FR"
+    contentDir = "content/fr-BE"
     title = "2PWNGear - le spécialiste de Gaming PC"
     weight = 30
     baseURL = "https://www.2pwngear.be/fr"

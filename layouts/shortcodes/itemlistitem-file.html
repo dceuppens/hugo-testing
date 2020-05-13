@@ -2,6 +2,9 @@
 {{ $EAN := .Get 4 }}
 {{ $url := .Site.Params.productfile }}
 {{ $sep := ";" }}
+
+
+
 {{ range $i, $r := getCSV $sep $url }}
 	{{ $eancheck :=  index $r 0 }}
     	{{if eq $EAN $eancheck }}
@@ -11,9 +14,15 @@
          {{ end }}
 {{ end }}	
 
+
+
 {{ $producturl := .Scratch.Get "producturl" }}
 {{ $pricevalue := .Scratch.Get "pricevalue" }}
 {{ $pricecurrency := .Scratch.Get "pricecurrency" }}
+
+{{ $.Page.Scratch.Set "totalcurrency" $pricecurrency }}
+{{ $.Page.Scratch.Add "total" (float $pricevalue) }}
+
 <li class="lc-listitem type-normal--item">
 	<a href="{{ $producturl }}" class="c-product-media">
 		<div class="c-product-media__media">
@@ -38,3 +47,9 @@
 		</div>
 	</a>
 </li>
+
+
+
+
+
+

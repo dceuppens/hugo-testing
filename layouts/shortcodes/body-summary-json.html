@@ -1,0 +1,46 @@
+
+
+{{ $EAN := .Get 2 }}
+{{ $countrycode := lower .Site.Params.countrycode }}
+
+{{ $plusarray := split (.Get 0) "," }}
+{{ $minarray  := split (.Get 1) "," }}
+
+
+{{ range $.Site.Data.data.products}}
+
+	{{ if eq .gtin13 $EAN }}
+
+		{{ range .country }}
+			{{ if eq .code $countrycode }}	
+			
+				{{ range first 1 (sort .offers "pricevalue") }}
+					{{ $.Scratch.Set "producturl" .producturl }}
+					{{ $.Scratch.Set "pricevalue" .pricevalue }}
+          			{{ $.Scratch.Set "pricecurrency" .priceCurrencySign }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+{{ end }}
+
+{{ $producturl := .Scratch.Get "producturl" }}
+{{ $pricevalue := .Scratch.Get "pricevalue" }}
+{{ $pricecurrency := .Scratch.Get "pricecurrency" }}
+
+
+<div class="content-body-summary">
+	<div class="content-body-swbox">
+		{{ range $plusarray }}
+		<p class="icon-plus-squared"> {{ . }} </p>
+		{{ end }}
+	
+		{{ range $minarray }}
+		<p class="icon-minus-squared"> {{ . }} </p>
+		{{ end }}
+	</div>
+		<a href="{{ $producturl }}" class="content-body-pricebox">
+		<p class="content-body-pricevalue">{{ $pricecurrency }} {{ $pricevalue }}</p>
+		<span class="media-button">Check current price</span>
+	</a>
+</div>

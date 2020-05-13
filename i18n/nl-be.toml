@@ -16,3 +16,6 @@ other = "bron"
 
 [copyright]
 other = "copyright: "
+
+[total_price]
+other = "Totaal: "

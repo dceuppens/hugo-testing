@@ -107,6 +107,13 @@ button.media-button, span.media-button {
     color: $color-white;
     background: $color-brand-secondary;
     border-radius: 3px;
+
+    &.blank {
+        background-color: transparent;
+        height: 0;
+        margin: 0;
+        }
+
 }
 
 
@@ -124,6 +131,11 @@ button.c-block-media-label, button.c-product-media-label, span.c-block-media-lab
     font-size:$font-size-small-2;
     padding: 0;
     height: 1.5em;
+    &.blank {
+            background-color: transparent;
+            height: 0;
+            margin: 0;
+        }
 }
 
 

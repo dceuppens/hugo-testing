@@ -3,34 +3,281 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.2pwngear.be/nl/</loc>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://www.2pwngear.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-be"
-                href="https://www.2pwngear.be/fr/"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/budget-builds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-nl"
-                href="https://www.2pwngear.nl/"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl-be"
-                href="https://www.2pwngear.be/nl/"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/medium-builds/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/medium-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/medium-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/medium-builds/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/high-end-builds/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/high-end-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/high-end-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/high-end-builds/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/tags/.vimrc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/tags/.vimrc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/tags/.vimrc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/tags/.vimrc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/accessoires/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/peripherals/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/accessoires/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/accessoires/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/high-end-builds/1000-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/high-end-builds/1000-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/high-end-builds/1000-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/high-end-builds/1000-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/high-end-builds/1500-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/high-end-builds/1500-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/high-end-builds/1500-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/high-end-builds/1500-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/beste-gaming-pc-onder-300/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/budget-builds/best-gaming-pc-under-300/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/best-gaming-pc-under-300/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/beste-gaming-pc-onder-300/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/beste-gaming-pc-onder-400/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/budget-builds/best-gaming-pc-under-400/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/-400-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/beste-gaming-pc-onder-400/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/500-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/budget-builds/best-gaming-pc-under-500/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/500-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/500-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/550-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/550-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/550-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/budget-builds/600-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/budget-builds/600-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/budget-builds/600-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/budget-builds/600-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/medium-builds/800-gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/medium-builds/800-gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/medium-builds/800-gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/categories/budget-builds/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/categories/budget-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/categories/budget-builds/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/categories/budget-builds/"
                 />
   </url>
   
   <url>
     <loc>https://www.2pwngear.be/nl/categories/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://www.2pwngear.com/categories/"
                 />
     <xhtml:link
@@ -51,14 +298,176 @@
   </url>
   
   <url>
-    <loc>https://www.2pwngear.be/nl/en/</loc>
+    <loc>https://www.2pwngear.be/nl/accessoires/invoer-apparaten/muis/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/peripherals/input-devices/mouse/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/accessoires/invoer-apparaten/muis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/accessoires/invoer-apparaten/muis/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/categories/gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/categories/gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/categories/gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/categories/gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/gaming-pc/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/gaming-pc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/gaming-pc/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-be"
+                href="https://www.2pwngear.be/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/accessoires/invoer-apparaten/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/peripherals/input-devices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/accessoires/invoer-apparaten/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/accessoires/invoer-apparaten/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/tags/plugins/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/tags/plugins/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/tags/plugins/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/tags/plugins/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/categories/problems/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/categories/problems/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/categories/problems/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/categories/problems/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/tags/spf13-vim/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/tags/spf13-vim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/tags/spf13-vim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/tags/spf13-vim/"
+                />
   </url>
   
   <url>
     <loc>https://www.2pwngear.be/nl/tags/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://www.2pwngear.com/tags/"
                 />
     <xhtml:link
@@ -75,6 +484,97 @@
                 rel="alternate"
                 hreflang="nl-be"
                 href="https://www.2pwngear.be/nl/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/tags/vim/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/tags/vim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/tags/vim/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/tags/vim/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/accessoires/audio-video/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/peripherals/audio-video/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/accessoires/audio-video/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/accessoires/audio-video/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/componenten/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/componenten/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/componenten/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/kennis/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/knowledge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/kennis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/kennis/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.2pwngear.be/nl/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://www.2pwngear.com/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-nl"
+                href="https://www.2pwngear.nl/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl-be"
+                href="https://www.2pwngear.be/nl/search/"
                 />
   </url>
   

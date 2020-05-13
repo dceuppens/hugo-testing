@@ -369,6 +369,14 @@
 	margin-bottom: 0em;
 }
 
+
+.content-body-image {
+	display: block;
+ 	margin: 0 auto;
+ 	max-width: 70%;
+ 	margin-bottom: $pad-half;
+}
+
 .content-body-summary {
 	display: flex;
 	flex-direction: column;
