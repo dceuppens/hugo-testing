@@ -16,6 +16,15 @@ Imagesource = "https://imgur.com/a/Izr2X"
 Image_ownerlink = "https://imgur.com/user/BrandonVetter"
 
 translationkey = "best-gaming-pc-500"
+
+[products]
+	CPU = "0730143309165"
+	GPU = "0778656075382"
+
+[upgrades]
+
+[peripherals]
+
 [menu]
 [menu.main]
 		name = "$500 Gaming PC"	
@@ -38,6 +47,8 @@ Like with the [$400 build](/gaming-pc/budget-builds/best-gaming-pc-under-400/ "G
 {{< markdowning >}} 
 ### The parts list: 
 {{< /markdowning >}} 
+
+{{< itemlist >}}
 
 {{< ulclass "lc-itemlist">}}
 
@@ -80,6 +91,9 @@ Last point is upgradeability. AMD has made some smart choices regarding upgrades
 ## Build Details {class="content-body-label"}
 
 Let's check each of the components used to build this budget 300 $ gaming system.
+
+
+{{< builddetails "products" >}} 
 
 {{< htmlclass3 "content-body-section" >}} 
 {{< markdowning >}} 

@@ -1,0 +1,141 @@
+{{ $countrycode := lower .Site.Params.countrycode }}
+
+{{ $detailstype := .Get 0 }}
+
+{{ $productlist := .Page.Params.peripherals }}
+{{ if eq $detailstype "products"}}
+	{{$productlist = .Page.Params.products}}
+{{else if eq $detailstype "peripherals"}}
+	{{ $productlist = .Page.Params.products}}
+{{ end }}
+
+{{range $name, $eans := $productlist }}
+	{{ $type := $name }}
+	{{ $ean := $eans }} 		
+
+	{{ range $.Site.Data.data.products}}
+		{{ if eq .gtin13 $ean }}
+			{{ range .country }}
+				{{ if eq .code $countrycode }}	
+				
+					{{ range first 1 (sort .offers "pricevalue") }}
+						{{ $.Page.Scratch.Set "producturl" .producturl }}
+						{{ $.Page.Scratch.Set "pricevalue" .pricevalue }}
+	          			{{ $.Page.Scratch.Set "pricecurrency" .priceCurrencySign }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	{{ $producturl := $.Page.Scratch.Get "producturl" }}
+	{{ $pricevalue := $.Page.Scratch.Get "pricevalue" }}
+	{{ $pricecurrency := $.Page.Scratch.Get "pricecurrency" }}
+
+	{{ $.Page.Scratch.Set "totalcurrency" $pricecurrency }}
+	{{ $.Page.Scratch.Add "total" (float $pricevalue) }}
+	
+	
+	{{ range $subdir, $files  :=  $.Site.Data.products }}
+		{{ if eq $subdir $type }}
+			{{ range $filename, $filedetail  :=  $files }}
+				{{ if eq $filename $ean }}
+					{{ $.Page.Scratch.Set "main-image" (index $filedetail "mainimage") }}
+					{{ $countrycontent := index $filedetail "country" }}
+					{{ range $countrycontent }}
+						{{ if eq .code $countrycode }}
+							{{ range .description }}
+								{{$.Page.Scratch.Set "productlabel" (upper $type) }}
+								{{$.Page.Scratch.Set "productheadline" .name }}
+								{{$.Page.Scratch.Set "productexcerpt" .slogan }}
+								{{$.Page.Scratch.Set "specs" .specs }}
+								{{$.Page.Scratch.Set "pospoints" .pluspoints }}
+								{{$.Page.Scratch.Set "negpoints" .negpoints }}
+								{{$.Page.Scratch.Set "description" .longdescription }}
+							{{ end }}	
+						{{ end }}	
+					{{ end }}					
+				{{ end }}	
+			{{ end }}	
+		{{ end }}	
+	{{ end }}
+
+	{{ $mainimage := $.Page.Scratch.Get "main-image" }}
+	{{ $productheadline := $.Page.Scratch.Get "productheadline" }}
+	{{ $productexcerpt := $.Page.Scratch.Get "productexcerpt" }}
+	{{ $specs := $.Page.Scratch.Get "specs" }}
+	{{ $pospoints := $.Page.Scratch.Get "pospoints" }}
+	{{ $negpoints := $.Page.Scratch.Get "negpoints" }}
+	{{ $description := $.Page.Scratch.Get "description" }}
+
+<div class="content-body-section">
+
+{{ $class := printf "%s%s" "icons-" $type }}
+{{ $id := replace $productheadline " " "-" }}
+<h3 class="{{ $class }}" id="{{ $id }}">{{ upper $type }}: {{ $productheadline}}</h3>
+<p class="content-body-h3subtitle">
+{{ $productexcerpt }}
+</p>
+
+<p class="content-body-speclist">
+{{ range $specs }}
+	<strong>{{ index . "specname" }}:</strong> {{ index . "specvalue" }} |
+{{ end }}
+</p>
+
+{{ with $.Site.GetPage "page" "media/_index.md" }}
+	{{ $original := .Resources.GetMatch ( printf "%s*" $mainimage ) }} 
+	{{ if $original }}
+  		{{ .Scratch.Set "image_large" ($original.Resize "498x jpg") }}
+		{{ .Scratch.Set "image_medium" ($original.Resize "398x jpg") }}
+  		{{ .Scratch.Set "image_small" ($original.Resize "321x jpg") }}
+
+  		{{ .Scratch.Set "image_mobile" ($original.Resize "473x jpg") }}
+  		{{ $image_large := .Scratch.Get "image_large" }}
+  		{{ $image_medium := .Scratch.Get "image_medium" }}
+  		{{ $image_small := .Scratch.Get "image_small" }}
+  		{{ $image_mobile := .Scratch.Get "image_mobile" }}
+
+  		<img 
+        alt=    
+         "{{ $productheadline }}"
+        
+        srcset="
+            	{{$image_large.RelPermalink}} 498w,
+            	{{$image_mobile.RelPermalink}} 473w,
+            	{{$image_medium.RelPermalink}} 398w,
+            	{{$image_small.RelPermalink}} 321w
+            	"
+       	sizes="
+        		(min-width: 81.25em) 498px,
+       			(min-width: 71.25em) 398px,
+       			(min-width: 61.25em) 321px,
+       			473px
+          		"
+       src="{{$image_large.RelPermalink}}"  class="content-body-image" loading="lazy">
+	{{ else }}
+  		<p>problem</p>
+	{{ end }}
+
+{{end}}
+<div class="content-body-summary">
+	<div class="content-body-swbox">
+	{{ range $pospoints }}	
+		<p class="icon-plus-squared">{{.}}</p>
+	{{ end }}	
+	{{ range $negpoints }}	
+		<p class="icon-minus-squared">{{.}}</p>
+	{{ end }}			
+		
+	</div>
+		<a href="{{$producturl}}" class="content-body-pricebox">
+		<p class="content-body-pricevalue">{{ $pricecurrency }} {{ $pricevalue }}</p>
+		<span class="media-button">Check current price</span>
+	</a>
+</div>
+
+<p>{{ $description }}</p>
+
+<hr> 
+
+{{ end }}

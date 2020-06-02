@@ -1,0 +1,103 @@
+{{ $countrycode := lower .Site.Params.countrycode }}
+
+<ul class = "lc-itemlist">
+
+{{range $name, $eans := .Page.Params.products }}
+	{{ $type := $name }}
+	{{ $ean := $eans }} 		
+
+	{{ range $.Site.Data.data.products}}
+		{{ if eq .gtin13 $ean }}
+			{{ range .country }}
+				{{ if eq .code $countrycode }}	
+				
+					{{ range first 1 (sort .offers "pricevalue") }}
+						{{ $.Page.Scratch.Set "producturl" .producturl }}
+						{{ $.Page.Scratch.Set "pricevalue" .pricevalue }}
+	          			{{ $.Page.Scratch.Set "pricecurrency" .priceCurrencySign }}
+					{{ end }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+
+	{{ $producturl := $.Page.Scratch.Get "producturl" }}
+	{{ $pricevalue := $.Page.Scratch.Get "pricevalue" }}
+	{{ $pricecurrency := $.Page.Scratch.Get "pricecurrency" }}
+
+	{{ $.Page.Scratch.Set "totalcurrency" $pricecurrency }}
+	{{ $.Page.Scratch.Add "total" (float $pricevalue) }}
+	
+	
+	{{ range $subdir, $files  :=  $.Site.Data.products }}
+		{{ if eq $subdir $type }}
+			{{ range $filename, $filedetail  :=  $files }}
+				{{ if eq $filename $ean }}
+					{{ $.Page.Scratch.Set "main-image" (index $filedetail "mainimage") }}
+					{{ $countrycontent := index $filedetail "country" }}
+					{{ range $countrycontent }}
+						{{ if eq .code $countrycode }}
+							{{ range .description }}
+								{{$.Page.Scratch.Set "productlabel" (upper $type) }}
+								{{$.Page.Scratch.Set "productheadline" .name }}
+								{{$.Page.Scratch.Set "productexcerpt" .slogan }}
+							{{ end }}	
+						{{ end }}	
+					{{ end }}					
+				{{ end }}	
+			{{ end }}	
+		{{ end }}	
+	{{ end }}
+
+	{{ $mainimage := $.Page.Scratch.Get "main-image" }}
+	{{ $productheadline := $.Page.Scratch.Get "productheadline" }}
+	{{ $productexcerpt := $.Page.Scratch.Get "productexcerpt" }}
+
+	<li class="lc-listitem type-normal--item">
+		<a href="{{ $producturl }}" class="c-product-media">
+			<div class="c-product-media__media">
+
+				{{ with $.Site.GetPage "page" "media/_index.md" }}
+					{{ $original := .Resources.GetMatch ( printf "%s*" $mainimage ) }} 
+					{{ $.Page.Scratch.Set "image" ($original.Resize  "67x") }}
+				{{ end }}
+				{{ $image := $.Page.Scratch.Get "image" }}
+				<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $productheadline}}" class="product-media__img" loading="lazy"/>
+			</div>
+			<div class="c-product-media__body">
+				<span class="c-product-media-label">{{ upper $type }}</span>
+				<h3 class="c-product-media__headline">{{ $productheadline}}</h3>
+				<p class="c-product-media__excerpt">{{ $productexcerpt }}</p>
+			</div>
+			<div class="c-product-media__price">
+				{{ if and $pricecurrency $pricevalue }}
+				<p class="c-product-media__pricevalue">{{ $pricecurrency }} {{ $pricevalue }} </p>
+				{{ end }}			
+			</div>
+			<div class="c-product-media__button">
+				<span class="media-button">view</span>
+			</div>
+		</a>
+	</li>
+{{ end }}
+
+	<li class="lc-listitem type-normal--item">
+		<div  class="c-product-media">
+			<div class="c-product-media__media">
+			</div>
+			<div class="c-product-media__body">
+				<span class="c-product-media-label blank"></span>
+				<h3 class="c-product-media__headline">{{ i18n "total_price" }}</h3>
+				<p class="c-product-media__excerpt"></p>
+			</div>
+			<div class="c-product-media__price">
+				
+				<p class="c-product-media__pricevalue"> {{ $.Page.Scratch.Get "totalcurrency" }}{{ div (math.Round (mul ($.Page.Scratch.Get "total") 100)) 100}} </p>
+				
+			</div>
+			<div class="c-product-media__button ">
+				<span class="media-button blank">view</span>
+			</div>
+		</div>
+	</li>
+</ul>

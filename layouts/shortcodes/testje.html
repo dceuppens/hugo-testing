@@ -1,0 +1,46 @@
+{{ $countrycode :=  lower .Site.Params.countrycode }}
+<p>{{ $countrycode}}</p>
+<ul class = "lc-itemlist">
+
+{{range $name, $eans := .Page.Params.products}}
+	{{ $type := $name }}
+	{{ $ean := $eans }} 		
+
+	{{ range $subdir, $files  :=  $.Site.Data.products }}
+		{{ if eq $subdir $type }}
+			<o><strong>{{ $subdir }}</strong></p>
+			{{ range $filename, $filedetail  :=  $files }}
+				{{ if eq $filename $ean }}
+					<o>{{ $filename }}</p>
+					<p>Brand: {{ index $filedetail "brand" }}</p>
+					{{ $countrycontent := index $filedetail "country" }}
+					
+					{{ range $countrycontent }}
+						
+						
+						{{ if eq .code $countrycode }}
+							{{ range .description }}
+								<p>{{ .name }}</p>
+								<p>{{ .slogan }}</p>
+								{{ range .pluspoints }}	
+									<p>Plus {{ . }}</p>
+								{{ end }}
+								{{ range .negpoints }}	
+									<p>Neg {{ . }}</p>
+								{{ end }}
+								{{ range .specs }}	
+									<p>{{ index . "specname" }} : {{ index . "specvalue" }} </p>
+								{{ end }}
+
+							{{ end }}	
+						{{ end }}	
+					{{ end }}					
+
+				{{ end }}	
+			{{ end }}	
+		{{ end }}	
+	{{ end }}
+
+
+{{ end }}
+</ul>

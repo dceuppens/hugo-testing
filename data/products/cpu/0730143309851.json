@@ -1,0 +1,62 @@
+{ 
+    "brand": "AMD",
+    "producttype":"CPU",
+    "mpn": "YD3200C5FHBOX",
+    "gtin12": "730143309851",
+    "gtin13": "0730143309851",
+    "mainimage": "amd-ryzen-3200g-box",
+    "secondaryimages":[
+      "amd-ryzen-3200g-detail"
+    ],
+
+    "country":[
+      {
+        "code": "us",  
+        "description":[
+          {
+            "name": "AMD Ryzen 3200G",
+            "slogan": "Excellent performance for a low price",
+            "longdescription": [
+              "The Ryzen 3 3200G from AMD is currently the best choice for an entry level gaming PC. It's an affordable quad-core CPU with reasonably high clock speed. Thanks to the integrated Radeon Vega 8, it performs quite well for gaming, especially when paired with a fast enough RAM.",
+              "It's build on the same architecture as its predecessor (the Ryzen 2200G) but slightly faster. The price difference however is low, so I preferred to use the 3200G for this build."
+            ],
+            "pluspoints":[
+              "Great value for price", 
+              "Excellent Graphics processing", 
+              "Integrated Cooling"
+            ],
+            "negpoints":[
+              "Might bottleneck future GPU's",
+              "No Overclocking"
+            ],
+            "specs":[
+              {
+              "specname": "Cores",
+              "specvalue": "4"
+              },
+              {
+              "specname": "Threads",
+              "specvalue": "4"
+              },              
+              {
+              "specname": "Base Clock",
+              "specvalue": "3.6 Ghz"
+              },              
+              {
+              "specname": "TDP",
+              "specvalue": "65W"
+              },              
+              {
+              "specname": "L3 Cache",
+              "specvalue": "3 MB"
+              },
+              {
+              "specname": "PCIe lanes",
+              "specvalue": "8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

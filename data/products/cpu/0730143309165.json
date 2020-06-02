@@ -1,0 +1,64 @@
+  { "brand": "AMD",
+    "producttype":"CPU",
+    "mpn": "YD2600BBAFBOX",
+    "gtin12": "730143309165",
+    "gtin13": "0730143309165",
+    "mainimage": "amd-ryzen-5-2600-box",
+    "secondaryimages":[
+      "amd-ryzen-3200g-detail"
+    ],
+
+    "country":[
+      {
+        "code": "us",  
+        "description": [
+          {
+            "name": "AMD Ryzen 5 2600",
+            "slogan": "Great multi core CPU that handles tasks with a breeze",
+            "longdescription": 
+              "Although this processor is currently being replaced by the Ryzen 5 3600, this processor is still amazing in handling everything you throw at it: gaming, streaming and pretty much anything else. At its current price level it simply can't be beaten in terms of price versus performance.",
+            
+            "pluspoints": [
+              "Great value for price", 
+              "Overclocking",
+              "Integrated Cooling"
+            ],
+            "negpoints": [
+              "No integrated GPU"
+            ],
+            "specs": [
+              {
+              "specname": "Cores",
+              "specvalue": "6"
+              },
+              {
+              "specname": "Threads",
+              "specvalue": "6"
+              },              
+              {
+              "specname": "Base Clock",
+              "specvalue": "3.4 Ghz"
+              },              
+              {
+              "specname": "Boost Clock",
+              "specvalue": "3.9 Ghz"
+              },              
+
+              {
+              "specname": "TDP",
+              "specvalue": "65W"
+              },              
+              {
+              "specname": "L3 Cache",
+              "specvalue": "16 MB"
+              },
+              {
+              "specname": "PCIe lanes",
+              "specvalue": "8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

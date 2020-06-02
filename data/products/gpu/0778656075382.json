@@ -1,0 +1,70 @@
+{
+    "brand": "XFX",
+    "producttype":"GPU",
+    "mpn": "RX-570P427D6",
+    "gtin12": "778656075382",
+    "gtin13": "0778656075382",
+    "mainimage": "xfx-radion-rx-570-rs",
+    "secondaryimages": ["amd-ryzen-3200g-detail"],
+    "country":[
+      {
+        "code": "us",  
+        "description": [
+          {
+            "name": "XFX Radeon RX 570 4 GB",
+            "slogan": "Excellent 1080p performance",
+            "longdescription": "At this price, there really is nothing that beats this Graphics card. It delivers excellent 1080p gaming performance at high frame rates, and even some decent 1440p frame rates. The technology is not really new, in fact it’s a smaller update of the previous RX 470, but it still is one of the finest graphics cards you can buy today.",
+            "pluspoints": [
+              "Overclocking", 
+              "Quiet",
+              "4GB GDDR5 VRAM"
+            ],
+            "negpoints": ["Power efficiency"],
+            "specs": [
+              {
+              "specname": "Memory",
+              "specvalue": "8 GB"
+              },
+              {
+              "specname": "Core Clock",
+              "specvalue": "1168 Mhz"
+              },              
+              {
+              "specname": "Boost Clock",
+              "specvalue": "1268 Mhz"
+              },              
+              {
+              "specname": "Frame Sync",
+              "specvalue": "Freesync"
+              },              
+
+              {
+              "specname": "Length",
+              "specvalue": "246 mm"
+              },              
+              {
+              "specname": "HDMI Ports",
+              "specvalue": "1"
+              },
+              {
+              "specname": "DVI ports",
+              "specvalue": "1"
+              },
+              {
+              "specname": "DisplayPort ports",
+              "specvalue": "3"
+              },
+              {
+              "specname": "External Power",
+              "specvalue": "1 PCIe 8-pin"
+              },
+              {
+              "specname": "Cooling",
+              "specvalue": "2 fans"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
